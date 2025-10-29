@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Pico Molecular - Rithm Patch</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Pico Molecular Rithm Patch - Innovative medical technology solutions." />
+    <meta name="keywords" content="Pico Molecular, Rithm Patch, medical technology, healthcare innovation" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pico Molecular - Rithm Patch" />
+    <meta property="og:description" content="Pico Molecular Rithm Patch - Innovative medical technology solutions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/images/og-image.jpg" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pico Molecular - Rithm Patch" />
+    <meta name="twitter:description" content="Pico Molecular Rithm Patch - Innovative medical technology solutions." />
+    <meta name="twitter:image" content="/images/og-image.jpg" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(30, 45, 75, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            min-height: 60px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #4a9eff;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 1px;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            display: inline-block;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover {
+            color: #4a9eff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(30, 45, 75, 0.6), rgba(30, 45, 75, 0.8)), url('photos/hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white !important;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            z-index: 100;
+            position: relative;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff !important;
+            text-shadow: 4px 4px 15px rgba(0,0,0,0.95), 0 0 40px rgba(0, 0, 0, 0.8), 2px 2px 5px rgba(0,0,0,1);
+            letter-spacing: 2px;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            line-height: 1.2;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+
+        .hero-content .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff !important;
+            text-shadow: 4px 4px 15px rgba(0,0,0,0.95), 0 0 40px rgba(0, 0, 0, 0.8), 2px 2px 5px rgba(0,0,0,1);
+            font-weight: 500;
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            letter-spacing: 1px;
+        }
+
+        .hero-content .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #e0e0e0 !important;
+            font-style: italic;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.95), 0 0 20px rgba(0, 0, 0, 0.8);
+            display: block;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .cta-button {
+            background: #4a9eff;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background: #6bb3ff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(74, 158, 255, 0.3);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1e2d4b;
+        }
+
+        /* Story Section */
+        .story {
+            background: #ffffff !important;
+            background-color: #ffffff !important;
+            padding: 5rem 0;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .story-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .story-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight {
+            color: #1e2d4b;
+            font-weight: 600;
+        }
+
+        .story-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Features Section */
+        .features {
+            background: #f8f9fa;
+            padding: 5rem 0;
+        }
+
+        .features-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .feature-item {
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(74, 158, 255, 0.2);
+        }
+
+        .feature-item h3 {
+            font-family: 'Playfair Display', serif;
+            color: #1e2d4b;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-item p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Technology Section */
+        .technology {
+            background: linear-gradient(rgba(30, 45, 75, 0.9), rgba(30, 45, 75, 0.95)), url('photos/technology-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .technology .section-title {
+            color: #4a9eff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        .technology-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .tech-item {
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, background 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .tech-item:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .tech-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .tech-item p {
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
+            position: relative;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-family: 'Playfair Display', serif;
+            color: #1e2d4b;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1e2d4b;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4a9eff;
+        }
+
+        .submit-btn {
+            background: #1e2d4b;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #4a9eff;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e2d4b;
+            color: #f5f5f5;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer .logo {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .story-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Pico Molecular</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+            <h1 style="font-family: 'Playfair Display', serif !important; color: #ffffff !important; display: block !important; visibility: visible !important; opacity: 1 !important; font-size: 4.5rem; font-weight: 700;">Pico Molecular</h1>
+            <p class="subtitle" style="color: #ffffff !important; display: block !important; visibility: visible !important; opacity: 1 !important; margin-top: 1rem;">Rithm Patch</p>
+            <p class="tagline" style="color: #e0e0e0 !important; display: block !important; visibility: visible !important; opacity: 1 !important; margin-top: 2rem;">Innovative medical technology for the future</p>
+            <a href="#contact" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="story" style="background: #ffffff !important; background-color: #ffffff !important;">
+        <div class="container">
+            <h2 class="section-title">About Rithm Patch</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>Welcome to <span class="highlight">Pico Molecular</span>, where cutting-edge technology meets medical innovation.</p>
+                    <p>The Rithm Patch represents a breakthrough in medical technology, designed to deliver precision and effectiveness through advanced molecular science.</p>
+                    <p>Our mission is to advance healthcare through innovative solutions that improve patient outcomes and transform medical practices.</p>
+                    <p><strong>Our Vision:</strong> To be at the forefront of medical technology innovation, creating solutions that make a meaningful difference in healthcare delivery and patient well-being.</p>
+                </div>
+                <div class="story-image">
+                    <img src="photos/about-image.jpg" alt="Pico Molecular Rithm Patch" style="width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-content">
+                <div class="feature-item">
+                    <h3>Precision Technology</h3>
+                    <p>Advanced molecular engineering ensures precise delivery and optimal performance.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Innovation</h3>
+                    <p>Cutting-edge research and development drive continuous improvement and advancement.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous testing and quality control standards ensure reliability and safety.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Patient Focus</h3>
+                    <p>Designed with patient comfort and positive outcomes as our primary goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <h2 class="section-title">Advanced Technology</h2>
+            <div class="technology-content">
+                <div class="tech-item">
+                    <h3>Molecular Science</h3>
+                    <p>Leveraging the latest advances in molecular biology and nanotechnology to create effective solutions.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Research & Development</h3>
+                    <p>Ongoing innovation through dedicated research initiatives and collaboration with medical professionals.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Quality Standards</h3>
+                    <p>Adherence to the highest industry standards and regulatory compliance for safety and efficacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Email:</strong> info@picomolecular.com</p>
+                    <p><strong>Phone:</strong> +1 (XXX) XXX-XXXX</p>
+                    <br>
+                    <h3>Business Inquiries</h3>
+                    <p>For partnership opportunities, distribution inquiries, or collaboration requests, please reach out through our contact form or email.</p>
+                    <br>
+                    <h3>Additional Information</h3>
+                    <p>Our team is ready to answer your questions and provide more information about the Rithm Patch and our other products.</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company / Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="Product Information">Product Information</option>
+                                <option value="Partnership">Partnership Opportunity</option>
+                                <option value="Distribution">Distribution Inquiry</option>
+                                <option value="General Information">General Information</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please share your questions or inquiries here"></textarea>
+                        </div>
+                        <button type="button" class="submit-btn" onclick="sendEmail()">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">Pico Molecular</div>
+            <p>Advancing medical technology through innovation</p>
+            <p>&copy; 2025 Pico Molecular. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(30, 45, 75, 0.98)';
+            } else {
+                header.style.background = 'rgba(30, 45, 75, 0.95)';
+            }
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-item, .tech-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Contact form handling
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Create email body
+            const emailBody = `Name: ${name}
+Email: ${email}
+Company: ${company || 'Not provided'}
+Subject: ${subject}
+
+Message:
+${message}
+
+---
+Sent from Pico Molecular website`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:info@picomolecular.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Your email client will open with the message pre-filled. Please send the email to complete your inquiry.');
+        }
+    </script>
+</body>
+</html>
