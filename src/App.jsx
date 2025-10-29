@@ -219,7 +219,7 @@ function App() {
                 backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(250,252,255,0.95) 50%, rgba(248,250,252,0.94) 100%), url(${heroBackdrop})`,
               }}
             />
-            <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 pt-20 pb-24 text-brand-dark lg:px-12 lg:pt-28 lg:pb-36">
+            <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 pt-20 pb-36 text-brand-dark lg:px-12 lg:pt-28 lg:pb-48">
               <div className="hero-brand">
                 <img src={rithmLogoMark} alt="Rithm circular logo" className="hero-brand-mark" />
                 <img src={rithmWord} alt="Rithm wordmark" className="hero-brand-word" />
@@ -268,7 +268,7 @@ function App() {
             </div>
           </section>
 
-          <section className="feature-section mt-20">
+          <section className="feature-section mt-32">
             <div className="feature-container">
               <div className="feature-grid">
                 {featureHighlights.map((card) => (
@@ -297,7 +297,7 @@ function App() {
             </div>
           </section>
 
-          <section className="bg-brand-light/70 mt-16">
+          <section className="bg-brand-light/70 mt-8">
             <div className="mx-auto max-w-6xl px-6 py-16 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-12">
               <div className="order-2 space-y-6 lg:order-1">
                 <span className="inline-flex items-center rounded-full bg-brand-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">
