@@ -1,4 +1,7 @@
 import './App.css'
+import picoLogo from '../photos/pico-molecular-logo.png'
+import heroImage from '../photos/hero-patch-model.png'
+import rithmLogo from '../photos/rithm-logo.png'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
@@ -124,13 +127,18 @@ function App() {
         <div className="pointer-events-none absolute -top-48 -right-48 h-96 w-96 rounded-full bg-gradient-to-br from-brand-primary/20 via-brand-accent/10 to-transparent blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-gradient-to-tr from-brand-glow/15 via-brand-accent/10 to-transparent blur-3xl" />
 
-        <header className="relative z-10 border-b border-white/40 bg-white/70 backdrop-blur-lg">
+        <header className="relative z-10 border-b border-brand-light bg-white">
           <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-12">
-            <a href="#home" className="inline-flex items-center gap-2">
-              <span className="h-10 w-10 rounded-full bg-gradient-to-br from-brand-primary to-brand-glow opacity-90" />
-              <span className="font-display text-xl font-semibold tracking-wide text-brand-dark">
-                Pico Molecular
-              </span>
+            <a href="#home" className="inline-flex items-center gap-3">
+              <img src={picoLogo} alt="Pico Molecular logo" className="h-12 w-auto" />
+              <div className="flex flex-col leading-tight">
+                <span className="font-display text-xl font-semibold tracking-wide text-brand-dark">
+                  Pico Molecular
+                </span>
+                <span className="text-xs font-medium italic text-brand-primary/80">
+                  there&apos;s method in our magic
+                </span>
+              </div>
             </a>
             <div className="hidden items-center gap-8 text-sm font-medium text-brand-muted lg:flex">
               {navigation.map((item) => (
@@ -194,13 +202,8 @@ function App() {
                   <div className="relative overflow-hidden rounded-[32px] border border-white/70 bg-gradient-to-br from-brand-primary/10 via-white to-brand-accent/10 shadow-2xl">
                     <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(59,130,246,0.45), transparent 50%)' }} />
                     <div className="absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-gradient-to-tr from-brand-glow/20 via-brand-primary/10 to-transparent blur-3xl" />
-                    <div className="relative flex aspect-[3/4] flex-col justify-end bg-[url("/photos/hero-wearable-placeholder.jpg")] bg-cover bg-center bg-no-repeat p-8">
-                      <div className="rounded-2xl bg-white/80 p-4 backdrop-blur">
-                        <p className="text-xs font-semibold uppercase tracking-widest text-brand-muted">Hero Image Placeholder</p>
-                        <p className="mt-2 text-sm text-brand-dark">
-                          Futuristic wearable patch on a model&apos;s arm with dynamic scientific background. Replace with final art direction.
-                        </p>
-                      </div>
+                    <div className="relative flex aspect-[3/4] items-end justify-center p-6">
+                      <img src={heroImage} alt="Pico Molecular Rithm Patch on user" className="h-full w-full rounded-3xl object-cover" />
                     </div>
                   </div>
                 </div>
@@ -212,13 +215,30 @@ function App() {
             <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
               <div className="grid gap-10 lg:grid-cols-[2fr_1fr] lg:items-center">
                 <div className="grid gap-6 sm:grid-cols-2">
-                  <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-6 shadow-sm">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">What is Pico Molecular?</p>
-                    <h3 className="mt-3 font-display text-2xl text-brand-dark">Building real-time molecular monitoring for personalized women’s health.</h3>
+                  <div className="flex flex-col items-start gap-4 rounded-3xl border border-brand-light bg-brand-light/70 p-6 shadow-sm">
+                    <img src={rithmLogo} alt="Rithm Patch logo" className="h-10 w-auto" />
+                    <h3 className="font-display text-2xl text-brand-dark">Continuous hormone intelligence you can wear.</h3>
+                    <p className="text-sm text-brand-muted">
+                      Rithm Patch is the flagship modality of Pico Molecular—engineered to deliver clinical-grade endocrine visibility without daily lab work.
+                    </p>
                   </div>
                   <div className="rounded-3xl border border-brand-light bg-white p-6 shadow-sm">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">What is the Rithm Patch?</p>
-                    <h3 className="mt-3 font-display text-2xl text-brand-dark">A comfortable, adhesive sensor tracking vital hormone data—painless, precise, breakthrough.</h3>
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Why it matters</p>
+                    <h3 className="mt-3 font-display text-2xl text-brand-dark">Painless, precise, breakthrough monitoring.</h3>
+                    <ul className="mt-4 space-y-3 text-sm text-brand-muted">
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-2 w-2 rounded-full bg-brand-primary" />
+                        Microneedle hydrogel array maintains stable biofluid access for days.
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-2 w-2 rounded-full bg-brand-primary" />
+                        Nanocomposite EAB sensors capture ultra-low hormone signatures in real time.
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 h-2 w-2 rounded-full bg-brand-primary" />
+                        AI biomarkers translate data into cycle forecasts, risk alerts, and care tasks.
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 rounded-3xl border border-brand-light bg-brand-light/60 p-6 text-sm text-brand-muted shadow-sm">
