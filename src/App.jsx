@@ -1,7 +1,7 @@
 import './App.css'
 import picoIcon from '../photos/pico-logo-icon.png'
 import heroImage from '../photos/hero-patch-model.png'
-import heroBackdrop from '../photos/4. Clinical Impact Scene.png'
+import heroBackdrop from '../photos/hero-disc-backdrop.png'
 import teamPortrait from '../photos/team-portrait.png'
 import appDashboard from '../photos/app-dashboard.png'
 import patchExploded from '../photos/patch-exploded.png'
@@ -176,7 +176,9 @@ function App() {
           <section id="home" className="relative isolate hero-section">
             <div
               className="hero-photo-bg"
-              style={{ backgroundImage: `url(${heroBackdrop})` }}
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.88) 0%, rgba(248,250,252,0.9) 55%, rgba(248,250,252,0.85) 100%), url(${heroBackdrop})`,
+              }}
             />
             <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-brand-dark lg:py-28 lg:px-12">
               <div className="hero-brand">
