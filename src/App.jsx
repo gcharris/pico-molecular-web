@@ -2,6 +2,10 @@ import './App.css'
 import picoLogo from '../photos/pico-molecular-logo.png'
 import heroImage from '../photos/hero-patch-model.png'
 import rithmLogo from '../photos/rithm-logo.png'
+import teamPortrait from '../photos/team-portrait.png'
+import appDashboard from '../photos/app-dashboard.png'
+import patchExploded from '../photos/patch-exploded.png'
+import lifestyleVisual from '../photos/lifestyle-visual.png'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
@@ -80,6 +84,8 @@ const platformTiles = [
       'Daily habit coaching tied to sleep, stress, nutrition, and medication adherence.',
       'Confident communication with secure messaging, labs tracking, and patch guidance.',
     ],
+    image: appDashboard,
+    imageAlt: 'Hormone insights mobile app interface',
   },
   {
     heading: 'Data Science Layer',
@@ -380,6 +386,37 @@ function App() {
           </section>
 
           <section className="bg-white">
+            <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1fr_0.9fr] lg:px-12 lg:items-center">
+              <div className="space-y-6">
+                <span className="inline-flex items-center rounded-full bg-brand-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">
+                  Inside the Patch
+                </span>
+                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Layered engineering for trustworthy biosignals.</h2>
+                <p className="text-brand-muted">
+                  The Rithm Patch marries soft biointerfaces with ruggedized electronics so clinicians can trust every microvolt. Each layer is designed to stabilize data integrity from skin contact to cloud analytics.
+                </p>
+                <ul className="space-y-4 text-sm text-brand-dark/80">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    <span><strong>Hydrogel microneedles:</strong> Self-sealing microcolumns draw interstitial fluid while anti-biofouling coatings preserve signal clarity.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    <span><strong>EAB sensor disc:</strong> Nanocomposite aptamers convert hormone binding events into stable electrochemical signatures.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    <span><strong>Wireless module:</strong> Ultra-low-power telemetry syncs encrypted packets to the Pico Molecular data mesh in real time.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 p-6 shadow-lg">
+                <img src={patchExploded} alt="Exploded engineering view of the Rithm Patch" className="w-full object-contain" />
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-white">
             <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
               <div className="mb-10 max-w-4xl text-center">
                 <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Designed to unlock value for every stakeholder.</h2>
@@ -409,6 +446,37 @@ function App() {
                     Combine differentiated IP with a hardware-as-a-service delivery model—recurring revenue, data network effects, and co-development opportunities across women’s health ecosystems.
                   </p>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-brand-light/70">
+            <div className="mx-auto max-w-6xl gap-12 px-6 py-16 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-12">
+              <div className="order-2 space-y-6 lg:order-1">
+                <span className="inline-flex items-center rounded-full bg-brand-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">
+                  Everyday adherence
+                </span>
+                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Designed for real lives, not just lab visits.</h2>
+                <p className="text-brand-muted">
+                  Members wear Rithm like a wellness accessory while clinicians receive the fidelity of a research instrument. The consumer-grade onboarding keeps adoption high; the medical backbone keeps data unquestionable.
+                </p>
+                <ul className="space-y-4 text-sm text-brand-dark/80">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    Seamless pairing with the mobile app delivers personalised nudges without disrupting daily flow.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    Automatic escalation routes keep providers informed the moment hormone volatility appears.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    APIs feed partner ecosystems—from fertility coaching to employer wellness dashboards.
+                  </li>
+                </ul>
+              </div>
+              <div className="order-1 mb-10 overflow-hidden rounded-3xl border border-brand-light bg-white shadow-glow lg:order-2 lg:mb-0">
+                <img src={lifestyleVisual} alt="Person reviewing hormone insights from the Rithm Patch at home" className="w-full object-cover" />
               </div>
             </div>
           </section>
@@ -478,8 +546,9 @@ function App() {
                   <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Founder</h2>
                   <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
                     <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                      <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl bg-[url('/photos/founder-placeholder.jpg')] bg-cover bg-center">
-                        <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-glow/20" />
+                      <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl">
+                        <img src={teamPortrait} alt="Pico Molecular founding team" className="h-full w-full object-cover" />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-glow/20" />
                       </div>
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Founder & CEO</p>
@@ -612,9 +681,15 @@ function App() {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-8 rounded-2xl border border-dashed border-brand-primary/30 bg-white/80 p-4 text-xs text-brand-muted">
-                      Placeholder visualization zone — swap with product screenshots or motion graphics.
-                    </div>
+                    {tile.image ? (
+                      <div className="mt-8 overflow-hidden rounded-2xl border border-white/60 bg-white">
+                        <img src={tile.image} alt={tile.imageAlt} className="w-full object-cover" />
+                      </div>
+                    ) : (
+                      <div className="mt-8 rounded-2xl border border-dashed border-brand-primary/30 bg-white/80 p-4 text-xs text-brand-muted">
+                        Placeholder visualization zone — swap with product screenshots or motion graphics.
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
