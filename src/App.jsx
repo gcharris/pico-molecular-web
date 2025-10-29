@@ -141,6 +141,46 @@ const stats = [
   { label: 'Care Efficiency', value: '4x', caption: 'Clinician time saved with automated summarization.' },
 ]
 
+const featureHighlights = [
+  {
+    tone: 'navy',
+    label: 'Why it matters',
+    title: 'Painless, precise, breakthrough monitoring.',
+    description:
+      'Microneedle hydrogel access, nanocomposite sensing, and adaptive biomarkers converge so hormone care finally has reliable signal.',
+    points: [
+      'Microneedle hydrogel array maintains stable biofluid access for days without irritation.',
+      'Nanocomposite EAB sensors capture ultra-low hormone signatures in real time.',
+      'AI biomarkers translate trends into cycle forecasts, risk alerts, and guided care tasks.',
+    ],
+  },
+  {
+    tone: 'royal',
+    label: 'How it flows',
+    title: 'From capture to insight, orchestrated for clinicians.',
+    description:
+      'The Rithm Patch bridges wetware and software—automating acquisition, calibration, and delivery of endocrine intelligence.',
+    points: [
+      'Edge intelligence harmonizes biosignals before they leave the body.',
+      'Cloud analytics layers protocols, population benchmarks, and personalization.',
+      'Clinicians receive configurable alerts, visits, and summaries that slot into existing workflows.',
+    ],
+    cta: { href: '#pipeline', label: 'Learn how it works' },
+  },
+  {
+    tone: 'dusk',
+    label: 'What teams gain',
+    title: 'Continuous hormone intelligence you can wear.',
+    description:
+      'Give members clarity every day while unlocking new services, revenue, and research partnerships.',
+    points: [
+      'Members move from symptom journaling to data-backed decisions.',
+      'Clinics replace 80% of routine blood draws while boosting capacity.',
+      'Partners layer unique IP and hardware-as-a-service into their platforms.',
+    ],
+  },
+]
+
 function App() {
   return (
     <div className="bg-brand-light text-brand-dark">
@@ -150,11 +190,8 @@ function App() {
 
         <header className="relative z-10 border-b border-brand-light bg-white">
           <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-12">
-            <a href="#home" className="inline-flex items-center gap-3">
-              <img src={picoIcon} alt="Pico Molecular" className="h-10 w-10" />
-              <span className="text-sm font-semibold tracking-[0.35em] uppercase text-brand-dark">
-                Pico Molecular
-              </span>
+            <a href="#home" className="inline-flex items-center gap-4" aria-label="Pico Molecular">
+              <img src={picoIcon} alt="" className="h-12 w-auto" />
             </a>
             <div className="hidden items-center gap-8 text-sm font-medium text-brand-muted lg:flex">
               {navigation.map((item) => (
@@ -229,53 +266,31 @@ function App() {
             </div>
           </section>
 
-          <section className="feature-section">
+          <section className="feature-section mt-24">
             <div className="feature-container">
               <div className="feature-grid">
-                <div className="feature-card">
-                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-light/60">Why it matters</p>
-                  <h3>Painless, precise, breakthrough monitoring.</h3>
-                  <ul>
-                    <li className="flex items-start">
-                      <span />
-                      <span>Microneedle hydrogel array maintains stable biofluid access for days.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span />
-                      <span>Nanocomposite EAB sensors capture ultra-low hormone signatures in real time.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span />
-                      <span>AI biomarkers translate data into cycle forecasts, risk alerts, and care tasks.</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="feature-card feature-card--accent">
-                  <div>
-                    <p>
-                      From signal capture to insight delivery, Rithm Patch orchestrates the data flow clinicians and members trust.
-                    </p>
+                {featureHighlights.map((card) => (
+                  <div key={card.title} className={`feature-card feature-card--${card.tone}`}>
+                    <p className="feature-card__label">{card.label}</p>
+                    <h3>{card.title}</h3>
+                    <p className="feature-card__lead">{card.description}</p>
+                    {card.points && (
+                      <ul className="feature-card__list">
+                        {card.points.map((point) => (
+                          <li key={point}>
+                            <span />
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {card.cta && (
+                      <a href={card.cta.href} className="feature-card__cta">
+                        {card.cta.label}
+                      </a>
+                    )}
                   </div>
-                  <div className="mt-8 flex flex-col gap-4">
-                    <a
-                      href="#pipeline"
-                      className="inline-flex items-center justify-center rounded-full bg-white/15 px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:-translate-y-0.5 hover:bg-white/25"
-                    >
-                      Learn How It Works
-                    </a>
-                    <a href="#platform" className="text-xs font-semibold uppercase tracking-[0.35em] transition hover:text-white">
-                      View Tech Specs →
-                    </a>
-                  </div>
-                </div>
-
-                <div className="feature-card feature-card--ghost">
-                  <img src={rithmLogoWordmark} alt="Rithm Patch" />
-                  <p>
-                    Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
-                  </p>
-                </div>
+                ))}
               </div>
             </div>
           </section>
