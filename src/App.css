@@ -31,8 +31,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: blur(12px);
-  transform: scale(1.08);
+  filter: blur(5px);
+  transform: scale(1.02);
   opacity: 1;
   z-index: 0;
 }

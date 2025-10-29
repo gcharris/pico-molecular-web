@@ -177,7 +177,7 @@ function App() {
             <div
               className="hero-photo-bg"
               style={{
-                backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.88) 0%, rgba(248,250,252,0.9) 55%, rgba(248,250,252,0.85) 100%), url(${heroBackdrop})`,
+                backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(250,252,255,0.95) 50%, rgba(248,250,252,0.94) 100%), url(${heroBackdrop})`,
               }}
             />
             <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-brand-dark lg:py-28 lg:px-12">
