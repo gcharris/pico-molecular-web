@@ -13,7 +13,6 @@ import pcosRelief from '../photos/pcos-relief.png'
 import dataScienceLayer from '../photos/data-science-layer.png'
 import rithmLogoMark from '../photos/rithm-logo-mark.png'
 import rithmLogoWordmark from '../photos/rithm-logo-wordmark.png'
-import rithmWord from '../photos/rithm-word.png'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
@@ -173,46 +172,52 @@ function App() {
         </header>
 
         <main>
-          <section id="home" className="relative isolate overflow-hidden bg-white">
-            <div className="absolute inset-0 bg-grid-dots [background-size:22px_22px]" />
-            <div className="relative mx-auto flex max-w-7xl flex-col gap-12 px-6 py-20 lg:py-28 lg:px-12">
-              <div className="flex flex-col items-center gap-6 text-center">
-                <img src={rithmLogoMark} alt="Rithm logo" className="h-24 w-auto" />
-                <img src={rithmWord} alt="Rithm" className="h-10 w-auto" />
-                <p className="text-base font-medium italic text-brand-primary/80 sm:text-lg">“There&apos;s method in our magic.”</p>
+          <section id="home" className="relative isolate hero-section">
+            <div className="absolute inset-0 bg-grid-dots [background-size:22px_22px] opacity-60" />
+            <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-white lg:py-28 lg:px-12">
+              <div className="hero-brand-card">
+                <div className="hero-logo-ring">
+                  <img src={rithmLogoMark} alt="Rithm circular logo" />
+                </div>
+                <h2 className="hero-brand-name">Rithm</h2>
+                <p className="hero-tagline">“There&apos;s method in our magic.”</p>
+                <p className="hero-summary">
+                  Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
+                </p>
+                <div className="hero-cta">
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-brand-primary/90"
+                  >
+                    Request Early Access
+                  </a>
+                  <a
+                    href="#platform"
+                    className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-brand-light transition hover:border-brand-primary/60 hover:text-brand-primary"
+                  >
+                    Explore Platform
+                  </a>
+                </div>
               </div>
-              <div className="flex flex-col gap-12 lg:flex-row lg:items-center">
+
+              <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
                 <div className="flex-1 space-y-8">
-                  <span className="inline-flex items-center gap-2 rounded-full bg-brand-primary/10 px-4 py-2 text-sm font-semibold text-brand-primary">
+                  <span className="hero-pill inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold">
                     Next-Gen Hormone Biosensing
                   </span>
-                  <h1 className="font-display text-4xl leading-tight text-brand-dark sm:text-5xl lg:text-6xl">
+                  <h1 className="hero-heading font-display">
                     The Rithm Patch: The CGM for Hormones
                   </h1>
-                  <p className="max-w-2xl text-lg text-brand-muted">
+                  <p className="hero-subtext max-w-2xl text-base sm:text-lg">
                     Continuous, real-time hormone insight for a new era in women&apos;s health.
                   </p>
-                  <div className="flex flex-wrap gap-4">
-                    <a
-                      href="#contact"
-                      className="inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-brand-primary/90"
-                    >
-                      Request Early Access
-                    </a>
-                    <a
-                      href="#platform"
-                      className="inline-flex items-center justify-center rounded-full border border-brand-muted/40 px-6 py-3 text-sm font-semibold text-brand-dark transition hover:border-brand-primary/60 hover:text-brand-primary"
-                    >
-                      Explore Platform
-                    </a>
-                  </div>
-                  <div className="overflow-hidden rounded-3xl border border-brand-light bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-brand-dark/90 p-6 text-white shadow-lg">
+                  <div className="hero-metrics">
                     <div className="grid gap-6 text-center sm:grid-cols-4">
                       {stats.map((stat) => (
                         <div key={stat.label} className="flex flex-col gap-2">
                           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-light/60">{stat.label}</p>
-                          <p className="font-display text-3xl text-brand-light">{stat.value}</p>
-                          <p className="text-xs text-brand-light/70">{stat.caption}</p>
+                          <p className="metric-value font-display text-3xl">{stat.value}</p>
+                          <p className="text-xs">{stat.caption}</p>
                         </div>
                       ))}
                     </div>
@@ -221,11 +226,11 @@ function App() {
                 <div className="flex-1">
                   <div className="relative mx-auto max-w-md">
                     <div className="absolute -top-10 -right-10 hidden h-24 w-24 rounded-full bg-gradient-to-br from-brand-primary/40 to-brand-glow/30 blur-2xl sm:block" />
-                    <div className="relative overflow-hidden rounded-[32px] border border-white/70 bg-gradient-to-br from-brand-primary/10 via-white to-brand-accent/10 shadow-2xl">
+                    <div className="relative overflow-hidden rounded-[32px] border border-white/20 bg-gradient-to-br from-brand-primary/15 via-white/10 to-brand-accent/15 shadow-2xl">
                       <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(59,130,246,0.45), transparent 50%)' }} />
-                      <div className="absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-gradient-to-tr from-brand-glow/20 via-brand-primary/10 to-transparent blur-3xl" />
+                      <div className="absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-gradient-to-tr from-brand-glow/25 via-brand-primary/15 to-transparent blur-3xl" />
                       <div className="relative flex aspect-[3/4] items-end justify-center p-6">
-                        <img src={heroImage} alt="Pico Molecular Rithm Patch on user" className="h-full w-full rounded-3xl object-cover" />
+                        <img src={heroImage} alt="Person wearing the Rithm Patch" className="h-full w-full rounded-3xl object-cover" />
                       </div>
                     </div>
                   </div>
