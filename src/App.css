@@ -29,12 +29,14 @@ a {
   height: auto;
   margin: 0 auto 1.75rem;
   display: block;
+  filter: drop-shadow(0 14px 32px rgba(37, 99, 235, 0.18));
 }
 
 .hero-brand-word {
   width: clamp(200px, 32vw, 300px);
   margin: 0 auto 1.5rem;
   display: block;
+  filter: drop-shadow(0 10px 24px rgba(15, 23, 42, 0.15));
 }
 
 .hero-tagline {

@@ -10,9 +10,9 @@ import patientConfidence from '../photos/patient-confidence.png'
 import ivfPartnership from '../photos/ivf-partnership.png'
 import pcosRelief from '../photos/pcos-relief.png'
 import dataScienceLayer from '../photos/data-science-layer.png'
-import rithmLogoMark from '../photos/rithm-logo-mark.png'
+import rithmLogoMark from '../photos/rithm-logo-mark-transparent.png'
 import rithmLogoWordmark from '../photos/rithm-logo-wordmark.png'
-import rithmWord from '../photos/rithm-word.png'
+import rithmWord from '../photos/rithm-word-transparent.png'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
