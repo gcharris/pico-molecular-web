@@ -18,61 +18,79 @@ a {
 }
 
 .hero-brand-card {
-  max-width: 640px;
+  position: relative;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 2.5rem 2rem;
-  border-radius: 1.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(30, 41, 59, 0.45) 100%);
-  box-shadow: 0 25px 60px -28px rgba(37, 99, 235, 0.55);
-  backdrop-filter: blur(22px);
+  padding: 3.5rem 3rem 3rem;
+  border-radius: 2.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: linear-gradient(135deg, rgba(18, 28, 54, 0.82) 0%, rgba(30, 45, 78, 0.58) 100%);
+  box-shadow: 0 35px 80px -42px rgba(59, 130, 246, 0.55);
+  backdrop-filter: blur(28px);
+  text-align: center;
+}
+
+.hero-logo-stack {
+  position: relative;
+  width: clamp(180px, 24vw, 220px);
+  height: clamp(180px, 24vw, 220px);
+  margin: 0 auto 2.25rem;
+}
+
+.hero-logo-glow {
+  position: absolute;
+  inset: -16%;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.58), transparent 70%),
+    radial-gradient(circle at 80% 75%, rgba(168, 85, 247, 0.5), transparent 65%),
+    radial-gradient(circle at 10% 80%, rgba(20, 184, 166, 0.42), transparent 55%);
+  filter: blur(24px);
+  opacity: 0.85;
 }
 
 .hero-logo-ring {
-  width: 112px;
-  height: 112px;
-  margin: 0 auto 1.5rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
   border-radius: 9999px;
-  background: radial-gradient(circle at 30% 20%, rgba(56, 189, 248, 0.35), transparent 65%),
-    radial-gradient(circle at 70% 80%, rgba(168, 85, 247, 0.35), transparent 55%),
-    rgba(15, 23, 42, 0.9);
+  background: radial-gradient(circle at 30% 30%, rgba(148, 163, 255, 0.32), transparent 80%),
+    radial-gradient(circle at 70% 70%, rgba(59, 130, 246, 0.4), transparent 78%),
+    rgba(12, 19, 38, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.28), 0 18px 40px -24px rgba(14, 38, 85, 0.6);
 }
 
-.hero-logo-ring img {
-  width: 68px;
+.hero-logo-mark {
+  width: 72%;
   height: auto;
+  border-radius: 9999px;
+  display: block;
+  box-shadow: 0 12px 30px -18px rgba(15, 23, 42, 0.85);
 }
 
-.hero-brand-name {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.25rem, 2.8vw, 3rem);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.hero-wordmark {
+  width: clamp(220px, 34vw, 320px);
+  margin: 0 auto 1.75rem;
+  display: block;
+  filter: drop-shadow(0 8px 26px rgba(59, 130, 246, 0.25));
 }
 
 .hero-tagline {
-  color: rgba(118, 169, 250, 0.9);
-  font-size: 0.95rem;
-  letter-spacing: 0.2em;
+  color: rgba(147, 197, 253, 0.9);
+  font-size: 0.9rem;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
+  margin-bottom: 1.75rem;
 }
 
 .hero-summary {
-  max-width: 40rem;
+  max-width: 42rem;
   margin: 0 auto;
-  color: rgba(226, 232, 240, 0.8);
-}
-
-.hero-cta {
-  margin-top: 1.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.85rem;
+  color: rgba(226, 232, 240, 0.78);
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
 .hero-heading {

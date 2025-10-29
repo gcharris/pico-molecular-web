@@ -1,7 +1,6 @@
 import './App.css'
 import picoIcon from '../photos/pico-logo-icon.png'
 import heroImage from '../photos/hero-patch-model.png'
-import rithmLogo from '../photos/rithm-logo.png'
 import teamPortrait from '../photos/team-portrait.png'
 import appDashboard from '../photos/app-dashboard.png'
 import patchExploded from '../photos/patch-exploded.png'
@@ -13,6 +12,7 @@ import pcosRelief from '../photos/pcos-relief.png'
 import dataScienceLayer from '../photos/data-science-layer.png'
 import rithmLogoMark from '../photos/rithm-logo-mark.png'
 import rithmLogoWordmark from '../photos/rithm-logo-wordmark.png'
+import rithmWord from '../photos/rithm-word.png'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
@@ -176,28 +176,17 @@ function App() {
             <div className="absolute inset-0 bg-grid-dots [background-size:22px_22px] opacity-60" />
             <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-white lg:py-28 lg:px-12">
               <div className="hero-brand-card">
-                <div className="hero-logo-ring">
-                  <img src={rithmLogoMark} alt="Rithm circular logo" />
+                <div className="hero-logo-stack">
+                  <span className="hero-logo-glow" />
+                  <div className="hero-logo-ring">
+                    <img src={rithmLogoMark} alt="Rithm circular logo" className="hero-logo-mark" />
+                  </div>
                 </div>
-                <h2 className="hero-brand-name">Rithm</h2>
+                <img src={rithmWord} alt="Rithm wordmark" className="hero-wordmark" />
                 <p className="hero-tagline">“There&apos;s method in our magic.”</p>
                 <p className="hero-summary">
                   Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
                 </p>
-                <div className="hero-cta">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-brand-primary/90"
-                  >
-                    Request Early Access
-                  </a>
-                  <a
-                    href="#platform"
-                    className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-brand-light transition hover:border-brand-primary/60 hover:text-brand-primary"
-                  >
-                    Explore Platform
-                  </a>
-                </div>
               </div>
 
               <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
