@@ -175,19 +175,24 @@ function App() {
         <main>
           <section id="home" className="relative isolate overflow-hidden bg-white">
             <div className="absolute inset-0 bg-grid-dots [background-size:22px_22px]" />
-            <div className="relative mx-auto flex min-h-[640px] max-w-7xl flex-col gap-12 px-6 py-20 lg:flex-row lg:items-center lg:py-28 lg:px-12">
-              <div className="flex-1 space-y-10">
-                <span className="inline-flex items-center gap-2 rounded-full bg-brand-primary/10 px-4 py-2 text-sm font-semibold text-brand-primary">
-                  Next-Gen Hormone Biosensing
-                </span>
-                <div className="flex flex-col items-center gap-6 text-center">
-                  <img src={rithmLogoMark} alt="Rithm logo" className="h-24 w-auto" />
-                  <img src={rithmWord} alt="Rithm" className="h-10 w-auto" />
-                  <p className="text-sm font-medium italic text-brand-primary/80">“There&apos;s method in our magic.”</p>
-                  <p className="max-w-2xl text-sm text-brand-muted">
-                    Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
+            <div className="relative mx-auto flex max-w-7xl flex-col gap-12 px-6 py-20 lg:py-28 lg:px-12">
+              <div className="flex flex-col items-center gap-6 text-center">
+                <img src={rithmLogoMark} alt="Rithm logo" className="h-24 w-auto" />
+                <img src={rithmWord} alt="Rithm" className="h-10 w-auto" />
+                <p className="text-base font-medium italic text-brand-primary/80 sm:text-lg">“There&apos;s method in our magic.”</p>
+              </div>
+              <div className="flex flex-col gap-12 lg:flex-row lg:items-center">
+                <div className="flex-1 space-y-8">
+                  <span className="inline-flex items-center gap-2 rounded-full bg-brand-primary/10 px-4 py-2 text-sm font-semibold text-brand-primary">
+                    Next-Gen Hormone Biosensing
+                  </span>
+                  <h1 className="font-display text-4xl leading-tight text-brand-dark sm:text-5xl lg:text-6xl">
+                    The Rithm Patch: The CGM for Hormones
+                  </h1>
+                  <p className="max-w-2xl text-lg text-brand-muted">
+                    Continuous, real-time hormone insight for a new era in women&apos;s health.
                   </p>
-                  <div className="flex flex-wrap justify-center gap-4">
+                  <div className="flex flex-wrap gap-4">
                     <a
                       href="#contact"
                       className="inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-brand-primary/90"
@@ -201,27 +206,27 @@ function App() {
                       Explore Platform
                     </a>
                   </div>
-                </div>
-                <div className="overflow-hidden rounded-3xl border border-brand-light bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-brand-dark/90 p-6 text-white shadow-lg">
-                  <div className="grid gap-6 text-center sm:grid-cols-4">
-                    {stats.map((stat) => (
-                      <div key={stat.label} className="flex flex-col gap-2">
-                        <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-light/60">{stat.label}</p>
-                        <p className="font-display text-3xl text-brand-light">{stat.value}</p>
-                        <p className="text-xs text-brand-light/70">{stat.caption}</p>
-                      </div>
-                    ))}
+                  <div className="overflow-hidden rounded-3xl border border-brand-light bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-brand-dark/90 p-6 text-white shadow-lg">
+                    <div className="grid gap-6 text-center sm:grid-cols-4">
+                      {stats.map((stat) => (
+                        <div key={stat.label} className="flex flex-col gap-2">
+                          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-light/60">{stat.label}</p>
+                          <p className="font-display text-3xl text-brand-light">{stat.value}</p>
+                          <p className="text-xs text-brand-light/70">{stat.caption}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex-1">
-                <div className="relative mx-auto max-w-md">
-                  <div className="absolute -top-10 -right-10 hidden h-24 w-24 rounded-full bg-gradient-to-br from-brand-primary/40 to-brand-glow/30 blur-2xl sm:block" />
-                  <div className="relative overflow-hidden rounded-[32px] border border-white/70 bg-gradient-to-br from-brand-primary/10 via-white to-brand-accent/10 shadow-2xl">
-                    <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(59,130,246,0.45), transparent 50%)' }} />
-                    <div className="absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-gradient-to-tr from-brand-glow/20 via-brand-primary/10 to-transparent blur-3xl" />
-                    <div className="relative flex aspect-[3/4] items-end justify-center p-6">
-                      <img src={heroImage} alt="Pico Molecular Rithm Patch on user" className="h-full w-full rounded-3xl object-cover" />
+                <div className="flex-1">
+                  <div className="relative mx-auto max-w-md">
+                    <div className="absolute -top-10 -right-10 hidden h-24 w-24 rounded-full bg-gradient-to-br from-brand-primary/40 to-brand-glow/30 blur-2xl sm:block" />
+                    <div className="relative overflow-hidden rounded-[32px] border border-white/70 bg-gradient-to-br from-brand-primary/10 via-white to-brand-accent/10 shadow-2xl">
+                      <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 25% 25%, rgba(59,130,246,0.45), transparent 50%)' }} />
+                      <div className="absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-gradient-to-tr from-brand-glow/20 via-brand-primary/10 to-transparent blur-3xl" />
+                      <div className="relative flex aspect-[3/4] items-end justify-center p-6">
+                        <img src={heroImage} alt="Pico Molecular Rithm Patch on user" className="h-full w-full rounded-3xl object-cover" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -279,57 +284,6 @@ function App() {
                       Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
                     </p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-brand-light/70">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="grid gap-8 md:grid-cols-2">
-                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
-                  <span className="inline-flex items-center rounded-full bg-brand-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">
-                    Problem
-                  </span>
-                  <h3 className="mt-4 font-display text-3xl text-brand-dark">Traditional hormone monitoring can&apos;t keep up.</h3>
-                  <ul className="mt-6 space-y-4 text-sm text-brand-muted">
-                    <li className="flex items-start gap-3">
-                      <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                      Symptom journaling is subjective, inconsistent, and tough to act on.
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                      Blood draws are invasive snapshots—impractical for continuous insight.
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                      Standard tools miss nuance across IVF prep, PMDD, and PCOS management.
-                    </li>
-                  </ul>
-                </div>
-                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
-                  <span className="inline-flex items-center rounded-full bg-brand-glow/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-glow">
-                    Solution
-                  </span>
-                  <h3 className="mt-4 font-display text-3xl text-brand-dark">Rithm Patch delivers continuous, objective hormone data.</h3>
-                  <ul className="mt-6 space-y-4 text-sm text-brand-muted">
-                    <li className="flex items-start gap-3">
-                      <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-glow" />
-                      Always-on monitoring mapped to IVF stimulation, retrieval, and transfer timelines.
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-glow" />
-                      Objective signals to detect PMDD triggers and personalized intervention windows.
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-glow" />
-                      Continuous data stream to decode PCOS variability and improve outcomes.
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-glow" />
-                      Wearable comfort designed for real life—no needles, no appointments, no guessing.
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
