@@ -1,5 +1,4 @@
 import './App.css'
-import picoWordmark from '../photos/pico-logo-wordmark.png'
 import picoIcon from '../photos/pico-logo-icon.png'
 import heroImage from '../photos/hero-patch-model.png'
 import rithmLogo from '../photos/rithm-logo.png'
@@ -84,6 +83,7 @@ const platformTiles = [
     ],
     image: providerConsole,
     imageAlt: 'Provider console with cohort risk stratification and care plan tools',
+    imageFit: 'object-cover',
   },
   {
     heading: 'Member App',
@@ -94,6 +94,7 @@ const platformTiles = [
     ],
     image: appDashboard,
     imageAlt: 'Hormone insights mobile app interface',
+    imageFit: 'object-cover',
   },
   {
     heading: 'Data Science Layer',
@@ -104,6 +105,7 @@ const platformTiles = [
     ],
     image: dataScienceLayer,
     imageAlt: 'Data science governance with privacy, APIs, and clinician oversight',
+    imageFit: 'object-contain',
   },
 ]
 
@@ -145,10 +147,9 @@ function App() {
 
         <header className="relative z-10 border-b border-brand-light bg-white">
           <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-12">
-            <a href="#home" className="inline-flex items-center gap-4">
-              <img src={picoWordmark} alt="Pico Molecular" className="logo-wordmark h-12 w-auto hidden sm:block" />
-              <img src={picoIcon} alt="Pico Molecular icon" className="h-12 w-auto sm:hidden" />
-              <span className="text-xs font-semibold tracking-[0.3em] uppercase text-brand-primary/80">
+            <a href="#home" className="inline-flex items-center gap-3">
+              <img src={picoIcon} alt="Pico Molecular" className="h-10 w-10" />
+              <span className="text-sm font-semibold tracking-[0.35em] uppercase text-white">
                 Pico Molecular
               </span>
             </a>
@@ -707,7 +708,7 @@ function App() {
                     </ul>
                     {tile.image ? (
                       <div className="mt-8 overflow-hidden rounded-2xl border border-white/60 bg-white">
-                        <img src={tile.image} alt={tile.imageAlt} className="w-full object-cover" />
+                        <img src={tile.image} alt={tile.imageAlt} className={`h-full w-full ${tile.imageFit ?? 'object-cover'}`} />
                       </div>
                     ) : (
                       <div className="mt-8 rounded-2xl border border-dashed border-brand-primary/30 bg-white/80 p-4 text-xs text-brand-muted">
