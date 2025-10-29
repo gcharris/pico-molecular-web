@@ -173,28 +173,14 @@ function App() {
 
         <main>
           <section id="home" className="relative isolate hero-section">
-            <div className="absolute inset-0 bg-grid-dots [background-size:22px_22px] opacity-60" />
             <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-brand-dark lg:py-28 lg:px-12">
-              <div className="hero-brand-card">
-                <div className="hero-logo-stack">
-                  <span className="hero-logo-glow" />
-                  <div className="hero-logo-ring">
-                    <img src={rithmLogoMark} alt="Rithm circular logo" className="hero-logo-mark" />
-                  </div>
-                </div>
-                <img src={rithmWord} alt="Rithm wordmark" className="hero-wordmark" />
+              <div className="hero-brand">
+                <img src={rithmLogoMark} alt="Rithm circular logo" className="hero-brand-mark" />
+                <img src={rithmWord} alt="Rithm wordmark" className="hero-brand-word" />
                 <p className="hero-tagline">“There&apos;s method in our magic.”</p>
                 <p className="hero-summary">
                   Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
                 </p>
-                <div className="hero-cta">
-                  <a href="#pipeline" className="hero-cta-primary">
-                    Learn How It Works
-                  </a>
-                  <a href="#platform" className="hero-cta-secondary">
-                    View Tech Specs →
-                  </a>
-                </div>
               </div>
 
               <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
