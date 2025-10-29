@@ -151,7 +151,7 @@ function App() {
           <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-12">
             <a href="#home" className="inline-flex items-center gap-3">
               <img src={picoIcon} alt="Pico Molecular" className="h-10 w-10" />
-              <span className="text-sm font-semibold tracking-[0.35em] uppercase text-white">
+              <span className="text-sm font-semibold tracking-[0.35em] uppercase text-brand-dark">
                 Pico Molecular
               </span>
             </a>
@@ -174,7 +174,7 @@ function App() {
         <main>
           <section id="home" className="relative isolate hero-section">
             <div className="absolute inset-0 bg-grid-dots [background-size:22px_22px] opacity-60" />
-            <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-white lg:py-28 lg:px-12">
+            <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-brand-dark lg:py-28 lg:px-12">
               <div className="hero-brand-card">
                 <div className="hero-logo-stack">
                   <span className="hero-logo-glow" />
@@ -187,6 +187,14 @@ function App() {
                 <p className="hero-summary">
                   Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
                 </p>
+                <div className="hero-cta">
+                  <a href="#pipeline" className="hero-cta-primary">
+                    Learn How It Works
+                  </a>
+                  <a href="#platform" className="hero-cta-secondary">
+                    View Tech Specs →
+                  </a>
+                </div>
               </div>
 
               <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
@@ -204,9 +212,9 @@ function App() {
                     <div className="grid gap-6 text-center sm:grid-cols-4">
                       {stats.map((stat) => (
                         <div key={stat.label} className="flex flex-col gap-2">
-                          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-light/60">{stat.label}</p>
+                          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-dark/50">{stat.label}</p>
                           <p className="metric-value font-display text-3xl">{stat.value}</p>
-                          <p className="text-xs">{stat.caption}</p>
+                          <p className="text-xs text-brand-dark/70">{stat.caption}</p>
                         </div>
                       ))}
                     </div>
