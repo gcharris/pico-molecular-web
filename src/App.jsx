@@ -11,6 +11,7 @@ import providerConsole from '../photos/provider-console.png'
 import patientConfidence from '../photos/patient-confidence.png'
 import ivfPartnership from '../photos/ivf-partnership.png'
 import pcosRelief from '../photos/pcos-relief.png'
+import dataScienceLayer from '../photos/data-science-layer.png'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
@@ -101,6 +102,8 @@ const platformTiles = [
       'Model training sandbox with bias monitoring and clinician-in-the-loop oversight.',
       'API toolkit for research sponsors, pharma partners, and digital front doors.',
     ],
+    image: dataScienceLayer,
+    imageAlt: 'Data science governance with privacy, APIs, and clinician oversight',
   },
 ]
 
