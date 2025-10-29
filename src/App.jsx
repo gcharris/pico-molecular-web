@@ -348,9 +348,6 @@ function App() {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-8 rounded-2xl border border-dashed border-brand-primary/30 bg-brand-light/60 p-4 text-xs text-brand-muted">
-                      Swap with product photography, prototype imagery, or program credentials.
-                    </div>
                   </div>
                 ))}
               </div>
@@ -470,120 +467,27 @@ function App() {
                   <div key={partner.title} className="rounded-3xl border border-brand-light bg-brand-light/60 p-6 shadow-sm">
                     <h3 className="font-display text-2xl text-brand-dark">{partner.title}</h3>
                     <p className="mt-4 text-sm text-brand-muted">{partner.detail}</p>
-                    <button className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-primary transition hover:text-brand-glow">
-                      Configure track
-                      <span aria-hidden="true">→</span>
-                    </button>
+                    <div className="mt-6 text-sm text-brand-muted/80">Collaborate with us to tailor deployment, pricing, and integrations for your organization.</div>
                   </div>
                 ))}
           </div>
         </div>
       </section>
 
-          <section className="bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="mb-10 max-w-4xl text-center">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Designed to unlock value for every stakeholder.</h2>
-                <p className="mt-4 text-brand-muted">
-                  Rithm Patch meets patients where they are, equips clinicians with precise decision support, and offers partners a defensible platform to scale.
-                </p>
-              </div>
-              <div className="grid gap-8 md:grid-cols-3">
-                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
-                  <div className="h-48 w-full overflow-hidden">
-                    <img src={patientConfidence} alt="Member enjoying calm with hormone insight" className="h-full w-full object-cover" />
-                  </div>
-                  <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Patients</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Better diagnosis, less pain.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Replace dense symptom journaling with effortless wear. Gentle microneedles eliminate repeated lab sticks while delivering real-time clarity for IVF, PMDD, and PCOS journeys.
-                    </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“I finally understand my cycle without living at the lab.” — Anissa, 34</blockquote>
-                  </div>
-                </div>
-                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-white shadow-sm">
-                  <div className="h-48 w-full overflow-hidden">
-                    <img src={ivfPartnership} alt="Clinician partnership supporting IVF couple" className="h-full w-full object-cover" />
-                  </div>
-                  <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Clinicians</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Replace 80% of IVF blood draws.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Continuous hormone panels deliver cycle visibility without daily venipuncture, freeing staff time and enhancing protocol responsiveness across reproductive endocrinology programs.
-                    </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Our IVF mornings run twice as smoothly with Rithm data in the chart.” — Dr. Patel, REI</blockquote>
-                  </div>
-                </div>
-                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
-                  <div className="h-48 w-full overflow-hidden">
-                    <img src={partnersUnique} alt="Strategic partner collaboration reviewing Rithm analytics" className="h-full w-full object-cover" />
-                  </div>
-                  <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Partners</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Unique IP, scalable HaaS.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Combine differentiated IP with a hardware-as-a-service delivery model—recurring revenue, data network effects, and co-development opportunities across women’s health ecosystems.
-                    </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Rithm unlocked a premium tier for our women’s health benefit in one quarter.” — Serena, Employer Benefits Lead</blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-white mt-24">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="grid gap-12">
-                <div className="space-y-6">
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Founder</h2>
-                  <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                    <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                      <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl">
-                        <img src={teamPortrait} alt="Pico Molecular founding team" className="h-full w-full object-cover" />
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-glow/20" />
-                      </div>
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Founder & CEO</p>
-                        <h3 className="mt-2 font-display text-3xl text-brand-dark">Alexandra Chen, PhD</h3>
-                        <p className="mt-3 text-sm text-brand-muted">
-                          Synthetic biologist and medical device engineer with a decade of experience translating biosensor IP into FDA-cleared products. Previously led biosignal R&D at leading CGM and fertility-tech companies.
-                        </p>
-                        <p className="mt-4 text-xs text-brand-muted">
-                          Placeholder biography and photo — swap in official headshot and credential highlights.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-16 grid gap-8 sm:grid-cols-2">
-                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Vision</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Continuous molecular intelligence for every body.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    Pico Molecular envisions a world where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
-                  </p>
-                </div>
-                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Mission</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Translate hormone signals into better outcomes.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    We engineer wearable biosensors and AI biomarkers that empower patients, equip clinicians, and unlock new standards of women’s health delivery.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
           <section id="contact" className="relative overflow-hidden bg-brand-dark text-white">
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/20 via-transparent to-brand-glow/20" />
             <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-6 py-24 lg:flex-row lg:items-center lg:px-12">
-              <div className="flex-1">
+              <div className="flex-1 space-y-6">
                 <h2 className="font-display text-4xl sm:text-5xl">Let&apos;s build the future of hormone health together.</h2>
                 <p className="mt-4 text-brand-light/80">
                   Share your program goals and we&apos;ll engineer a launch roadmap, integration plan, and success metrics tailored to your population.
                 </p>
+                <a
+                  href="mailto:josephine@picomolecular.com"
+                  className="inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+                >
+                  Contact josephine@picomolecular.com
+                </a>
               </div>
               <div className="flex-1">
                 <form className="rounded-3xl border border-white/10 bg-white/10 p-8 backdrop-blur">
@@ -643,16 +547,6 @@ function App() {
                     This form is a visual placeholder. Connect to your preferred marketing automation or CRM when ready.
                   </p>
                 </form>
-              </div>
-            </div>
-          </section>
-          <section className="bg-white">
-            <div className="mx-auto max-w-4xl px-6 py-16 text-center lg:px-12">
-              <div className="rounded-3xl border border-brand-light bg-brand-dark/95 p-10 text-brand-light shadow-2xl">
-                <h3 className="font-display text-3xl sm:text-4xl">Let&apos;s build the future of hormone health together.</h3>
-                <p className="mt-4 text-sm text-brand-light/80">
-                  Share your program goals and we&apos;ll engineer a launch roadmap, integration plan, and success metrics tailored to your population.
-                </p>
               </div>
             </div>
           </section>
