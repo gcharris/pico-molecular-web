@@ -1,6 +1,7 @@
 import './App.css'
 import picoIcon from '../photos/pico-logo-icon.png'
 import heroImage from '../photos/hero-patch-model.png'
+import heroBackdrop from '../photos/4. Clinical Impact Scene.png'
 import teamPortrait from '../photos/team-portrait.png'
 import appDashboard from '../photos/app-dashboard.png'
 import patchExploded from '../photos/patch-exploded.png'
@@ -173,6 +174,10 @@ function App() {
 
         <main>
           <section id="home" className="relative isolate hero-section">
+            <div
+              className="hero-photo-bg"
+              style={{ backgroundImage: `url(${heroBackdrop})` }}
+            />
             <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-brand-dark lg:py-28 lg:px-12">
               <div className="hero-brand">
                 <img src={rithmLogoMark} alt="Rithm circular logo" className="hero-brand-mark" />

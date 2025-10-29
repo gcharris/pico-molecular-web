@@ -25,6 +25,17 @@ a {
   color: #0f172a;
 }
 
+.hero-section .hero-photo-bg {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.28;
+  filter: blur(10px);
+  transform: scale(1.05);
+}
+
 .hero-brand {
   max-width: 640px;
   margin: 0 auto;
