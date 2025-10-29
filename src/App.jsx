@@ -6,6 +6,10 @@ import teamPortrait from '../photos/team-portrait.png'
 import appDashboard from '../photos/app-dashboard.png'
 import patchExploded from '../photos/patch-exploded.png'
 import lifestyleVisual from '../photos/lifestyle-visual.png'
+import providerConsole from '../photos/provider-console.png'
+import patientConfidence from '../photos/patient-confidence.png'
+import ivfPartnership from '../photos/ivf-partnership.png'
+import pcosRelief from '../photos/pcos-relief.png'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
@@ -76,6 +80,8 @@ const platformTiles = [
       'EHR-friendly exports, HL7/FHIR integrations, and programmable care plans.',
       'Automated note summarization for time-savings and audit-ready documentation.',
     ],
+    image: providerConsole,
+    imageAlt: 'Provider console with cohort risk stratification and care plan tools',
   },
   {
     heading: 'Member App',
@@ -425,26 +431,44 @@ function App() {
                 </p>
               </div>
               <div className="grid gap-8 md:grid-cols-3">
-                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Patients</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Better diagnosis, less pain.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    Replace dense symptom journaling with effortless wear. Gentle microneedles eliminate repeated lab sticks while delivering real-time clarity for IVF, PMDD, and PCOS journeys.
-                  </p>
+                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
+                  <div className="h-48 w-full overflow-hidden">
+                    <img src={patientConfidence} alt="Member enjoying calm with hormone insight" className="h-full w-full object-cover" />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-4 p-8">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Patients</p>
+                    <h3 className="font-display text-2xl text-brand-dark">Better diagnosis, less pain.</h3>
+                    <p className="text-sm text-brand-muted">
+                      Replace dense symptom journaling with effortless wear. Gentle microneedles eliminate repeated lab sticks while delivering real-time clarity for IVF, PMDD, and PCOS journeys.
+                    </p>
+                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“I finally understand my cycle without living at the lab.” — Anissa, 34</blockquote>
+                  </div>
                 </div>
-                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Clinicians</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Replace 80% of IVF blood draws.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    Continuous hormone panels deliver cycle visibility without daily venipuncture, freeing staff time and enhancing protocol responsiveness across reproductive endocrinology programs.
-                  </p>
+                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-white shadow-sm">
+                  <div className="h-48 w-full overflow-hidden">
+                    <img src={ivfPartnership} alt="Clinician partnership supporting IVF couple" className="h-full w-full object-cover" />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-4 p-8">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Clinicians</p>
+                    <h3 className="font-display text-2xl text-brand-dark">Replace 80% of IVF blood draws.</h3>
+                    <p className="text-sm text-brand-muted">
+                      Continuous hormone panels deliver cycle visibility without daily venipuncture, freeing staff time and enhancing protocol responsiveness across reproductive endocrinology programs.
+                    </p>
+                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Our IVF mornings run twice as smoothly with Rithm data in the chart.” — Dr. Patel, REI</blockquote>
+                  </div>
                 </div>
-                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Partners</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Unique IP, scalable HaaS.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    Combine differentiated IP with a hardware-as-a-service delivery model—recurring revenue, data network effects, and co-development opportunities across women’s health ecosystems.
-                  </p>
+                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
+                  <div className="h-48 w-full overflow-hidden">
+                    <img src={pcosRelief} alt="Partner ecosystem celebrating hormone clarity" className="h-full w-full object-cover" />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-4 p-8">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Partners</p>
+                    <h3 className="font-display text-2xl text-brand-dark">Unique IP, scalable HaaS.</h3>
+                    <p className="text-sm text-brand-muted">
+                      Combine differentiated IP with a hardware-as-a-service delivery model—recurring revenue, data network effects, and co-development opportunities across women’s health ecosystems.
+                    </p>
+                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Rithm unlocked a premium tier for our women’s health benefit in one quarter.” — Serena, Employer Benefits Lead</blockquote>
+                  </div>
                 </div>
               </div>
             </div>
