@@ -268,7 +268,7 @@ function App() {
             </div>
           </section>
 
-          <section className="feature-section mt-24">
+          <section className="feature-section mt-32">
             <div className="feature-container">
               <div className="feature-grid">
                 {featureHighlights.map((card) => (
@@ -299,7 +299,7 @@ function App() {
 
           <section className="bg-white">
             <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="mb-10 max-w-3xl text-center">
+              <div className="mb-10 max-w-3xl text-center mx-auto">
                 <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">From wear to wisdom in three clicks.</h2>
                 <p className="mt-4 text-brand-muted">
                   Microneedle arrays, electrochemical EAB sensors, and AI biomarker engines work together to transform surface-level sampling into clinically meaningful hormone intelligence.
@@ -336,8 +336,8 @@ function App() {
           </section>
 
           <section className="bg-brand-light/80">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="mb-10 max-w-4xl text-center">
+            <div className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
+              <div className="mb-12 max-w-3xl mx-auto text-center">
                 <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Three protected innovation pillars.</h2>
                 <p className="mt-4 text-brand-muted">
                   Each intellectual property aim anchors a different layer of the Rithm Patch stack, translating biochemical mastery into durable clinical value.
@@ -747,11 +747,6 @@ function App() {
                 <p className="mt-4 text-brand-light/80">
                   Share your program goals and we&apos;ll engineer a launch roadmap, integration plan, and success metrics tailored to your population.
                 </p>
-                <div className="mt-8 space-y-4 text-sm text-brand-light/80">
-                  <p><strong>Email:</strong> partnerships@picomolecular.com</p>
-                  <p><strong>Phone:</strong> +1 (415) 555-0128</p>
-                  <p><strong>HQ:</strong> San Francisco, CA</p>
-                </div>
               </div>
               <div className="flex-1">
                 <form className="rounded-3xl border border-white/10 bg-white/10 p-8 backdrop-blur">
@@ -816,21 +811,10 @@ function App() {
           </section>
           <section className="bg-white">
             <div className="mx-auto max-w-4xl px-6 py-16 text-center lg:px-12">
-              <div className="rounded-3xl border border-brand-light bg-brand-light/60 p-10 shadow-sm">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Join our mission.</h2>
-                <p className="mt-4 text-sm text-brand-muted">
-                  Sign up for updates, partner inquiries, or demo requests. Let&apos;s collaborate on delivering hormone intelligence at scale.
-                </p>
-                <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                  <a
-                    href="mailto:josephine@picomolecular.com"
-                    className="inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-brand-primary/90"
-                  >
-                    josephine@picomolecular.com
-                  </a>
-                </div>
-                <p className="mt-4 text-xs text-brand-muted">
-                  Add marketing automation or CRM integrations when you&apos;re ready — the layout is built to host them.
+              <div className="rounded-3xl border border-brand-light bg-brand-dark/95 p-10 text-brand-light shadow-2xl">
+                <h3 className="font-display text-3xl sm:text-4xl">Let&apos;s build the future of hormone health together.</h3>
+                <p className="mt-4 text-sm text-brand-light/80">
+                  Share your program goals and we&apos;ll engineer a launch roadmap, integration plan, and success metrics tailored to your population.
                 </p>
               </div>
             </div>
