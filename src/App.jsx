@@ -219,7 +219,7 @@ function App() {
                 backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(250,252,255,0.95) 50%, rgba(248,250,252,0.94) 100%), url(${heroBackdrop})`,
               }}
             />
-            <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 text-brand-dark lg:py-28 lg:px-12">
+            <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 pt-20 pb-32 text-brand-dark lg:px-12 lg:pt-32 lg:pb-48">
               <div className="hero-brand">
                 <img src={rithmLogoMark} alt="Rithm circular logo" className="hero-brand-mark" />
                 <img src={rithmWord} alt="Rithm wordmark" className="hero-brand-word" />
@@ -297,165 +297,8 @@ function App() {
             </div>
           </section>
 
-          <section className="bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="mb-10 max-w-3xl text-center mx-auto">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">From wear to wisdom in three clicks.</h2>
-                <p className="mt-4 text-brand-muted">
-                  Microneedle arrays, electrochemical EAB sensors, and AI biomarker engines work together to transform surface-level sampling into clinically meaningful hormone intelligence.
-                </p>
-              </div>
-              <div className="grid gap-8 md:grid-cols-3">
-                {[
-                  {
-                    step: '1',
-                    title: 'Wear',
-                    description: 'User applies the skin-friendly patch—microneedles painlessly access interstitial fluid in minutes.',
-                  },
-                  {
-                    step: '2',
-                    title: 'Connect',
-                    description: 'Electrochemical aptamer-based sensors capture hormonal signals and stream encrypted data to the secure app.',
-                  },
-                  {
-                    step: '3',
-                    title: 'Know',
-                    description: 'Edge + cloud AI translates biomarkers into daily, actionable analytics for members and care teams.',
-                  },
-                ].map((item) => (
-                  <div key={item.step} className="relative rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                    <span className="absolute -top-5 left-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary text-sm font-semibold text-white shadow-lg">
-                      {item.step}
-                    </span>
-                    <h3 className="mt-8 font-display text-2xl text-brand-dark">{item.title}</h3>
-                    <p className="mt-4 text-sm text-brand-muted">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-brand-light/80">
-            <div className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
-              <div className="mb-12 max-w-3xl mx-auto text-center">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Three protected innovation pillars.</h2>
-                <p className="mt-4 text-brand-muted">
-                  Each intellectual property aim anchors a different layer of the Rithm Patch stack, translating biochemical mastery into durable clinical value.
-                </p>
-              </div>
-              <div className="grid gap-8 md:grid-cols-3">
-                {[
-                  {
-                    heading: 'IP Aim 1',
-                    title: 'Hydrogel microneedles',
-                    description: 'Engineered for long, stable biofluid access with skin-friendly adhesion and day-long comfort.',
-                  },
-                  {
-                    heading: 'IP Aim 2',
-                    title: 'Nanocomposite EAB sensors',
-                    description: 'Electrochemical aptamer-based sensing tuned for ultra-sensitive hormone capture at low concentrations.',
-                  },
-                  {
-                    heading: 'IP Aim 3',
-                    title: 'AI digital biomarkers',
-                    description: 'Adaptive signal modeling converts raw hormone patterns into actionable insight and care pathways.',
-                  },
-                ].map((item) => (
-                  <div key={item.heading} className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">{item.heading}</p>
-                    <h3 className="mt-4 font-display text-2xl text-brand-dark">{item.title}</h3>
-                    <p className="mt-4 text-sm text-brand-muted">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-white">
-            <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-              <div className="space-y-6">
-                <span className="inline-flex items-center rounded-full bg-brand-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">
-                  Inside the Patch
-                </span>
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Layered engineering for trustworthy biosignals.</h2>
-                <p className="text-brand-muted">
-                  The Rithm Patch marries soft biointerfaces with ruggedized electronics so clinicians can trust every microvolt. Each layer is designed to stabilize data integrity from skin contact to cloud analytics.
-                </p>
-                <ul className="space-y-4 text-sm text-brand-dark/80">
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                    <span><strong>Hydrogel microneedles:</strong> Self-sealing microcolumns draw interstitial fluid while anti-biofouling coatings preserve signal clarity.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                    <span><strong>EAB sensor disc:</strong> Nanocomposite aptamers convert hormone binding events into stable electrochemical signatures.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                    <span><strong>Wireless module:</strong> Ultra-low-power telemetry syncs encrypted packets to the Pico Molecular data mesh in real time.</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 p-6 shadow-lg">
-                <img src={patchExploded} alt="Exploded engineering view of the Rithm Patch" className="w-full object-contain" />
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="mb-10 max-w-4xl text-center">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Designed to unlock value for every stakeholder.</h2>
-                <p className="mt-4 text-brand-muted">
-                  Rithm Patch meets patients where they are, equips clinicians with precise decision support, and offers partners a defensible platform to scale.
-                </p>
-              </div>
-              <div className="grid gap-8 md:grid-cols-3">
-                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
-                  <div className="h-48 w-full overflow-hidden">
-                    <img src={patientConfidence} alt="Member enjoying calm with hormone insight" className="h-full w-full object-cover" />
-                  </div>
-                  <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Patients</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Better diagnosis, less pain.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Replace dense symptom journaling with effortless wear. Gentle microneedles eliminate repeated lab sticks while delivering real-time clarity for IVF, PMDD, and PCOS journeys.
-                    </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“I finally understand my cycle without living at the lab.” — Anissa, 34</blockquote>
-                  </div>
-                </div>
-                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-white shadow-sm">
-                  <div className="h-48 w-full overflow-hidden">
-                    <img src={ivfPartnership} alt="Clinician partnership supporting IVF couple" className="h-full w-full object-cover" />
-                  </div>
-                  <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Clinicians</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Replace 80% of IVF blood draws.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Continuous hormone panels deliver cycle visibility without daily venipuncture, freeing staff time and enhancing protocol responsiveness across reproductive endocrinology programs.
-                    </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Our IVF mornings run twice as smoothly with Rithm data in the chart.” — Dr. Patel, REI</blockquote>
-                  </div>
-                </div>
-                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
-                  <div className="h-48 w-full overflow-hidden">
-                    <img src={partnersUnique} alt="Strategic partner collaboration reviewing Rithm analytics" className="h-full w-full object-cover" />
-                  </div>
-                  <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Partners</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Unique IP, scalable HaaS.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Combine differentiated IP with a hardware-as-a-service delivery model—recurring revenue, data network effects, and co-development opportunities across women’s health ecosystems.
-                    </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Rithm unlocked a premium tier for our women’s health benefit in one quarter.” — Serena, Employer Benefits Lead</blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-brand-light/70">
-            <div className="mx-auto max-w-6xl gap-12 px-6 py-16 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-12">
+          <section className="bg-brand-light/70 mt-24">
+            <div className="mx-auto max-w-6xl px-6 py-16 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-12">
               <div className="order-2 space-y-6 lg:order-1">
                 <span className="inline-flex items-center rounded-full bg-brand-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">
                   Everyday adherence
@@ -481,108 +324,6 @@ function App() {
               </div>
               <div className="order-1 mb-10 overflow-hidden rounded-3xl border border-brand-light bg-white shadow-glow lg:order-2 lg:mb-0">
                 <img src={lifestyleVisual} alt="Person reviewing hormone insights from the Rithm Patch at home" className="w-full object-cover" />
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-brand-light/70">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="mb-8 max-w-4xl text-center">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">See how Rithm compares.</h2>
-                <p className="mt-4 text-brand-muted">
-                  A side-by-side view of continuous hormone intelligence versus legacy lab workflows and emerging competitors.
-                </p>
-              </div>
-              <div className="overflow-hidden rounded-3xl border border-brand-light bg-white shadow-sm">
-                <div className="grid grid-cols-4 bg-brand-dark text-white">
-                  <div className="px-6 py-4 text-sm font-semibold uppercase tracking-[0.3em] text-brand-light/70">Category</div>
-                  <div className="px-6 py-4 text-lg font-semibold">Rithm Patch</div>
-                  <div className="px-6 py-4 text-lg font-semibold">Blood Tests</div>
-                  <div className="px-6 py-4 text-lg font-semibold">Level Zero Health (LZH)</div>
-                </div>
-                {[
-                  {
-                    label: 'Continuous Monitoring',
-                    rithm: 'Yes — 24/7 hormone signal stream with AI coaching.',
-                    blood: 'No — episodic draws capture isolated points.',
-                    lzh: 'Partial — intermittent tracking, limited hormone scope.',
-                  },
-                  {
-                    label: 'Pain Level',
-                    rithm: 'Painless microneedle wear; no daily clinic visits.',
-                    blood: 'Invasive venipuncture; recurrent appointments.',
-                    lzh: 'Low — surface sensors, but narrow biomarker coverage.',
-                  },
-                  {
-                    label: 'Data Intelligence',
-                    rithm: 'Predictive digital biomarkers with clinician workflow integration.',
-                    blood: 'Manual interpretation; delays between draw and action.',
-                    lzh: 'Basic trend outputs, limited provider integrations.',
-                  },
-                  {
-                    label: 'IP Moat',
-                    rithm: 'Patented microneedles + EAB sensors + AI stack.',
-                    blood: 'Commodity lab infrastructure.',
-                    lzh: 'Software-first IP, hardware sourced from partners.',
-                  },
-                  {
-                    label: 'Market Approach',
-                    rithm: 'Hardware-as-a-service for clinics, employers, and research.',
-                    blood: 'Fee-for-service diagnostics.',
-                    lzh: 'Direct-to-consumer wellness focus.',
-                  },
-                ].map((row) => (
-                  <div key={row.label} className="grid grid-cols-4 border-t border-brand-light/60">
-                    <div className="px-6 py-5 text-sm font-semibold uppercase tracking-wide text-brand-muted">{row.label}</div>
-                    <div className="px-6 py-5 text-sm text-brand-dark/80">{row.rithm}</div>
-                    <div className="px-6 py-5 text-sm text-brand-dark/80">{row.blood}</div>
-                    <div className="px-6 py-5 text-sm text-brand-dark/80">{row.lzh}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="grid gap-12">
-                <div className="space-y-6">
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Founder</h2>
-                  <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                    <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                      <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl">
-                        <img src={teamPortrait} alt="Pico Molecular founding team" className="h-full w-full object-cover" />
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-glow/20" />
-                      </div>
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Founder & CEO</p>
-                        <h3 className="mt-2 font-display text-3xl text-brand-dark">Alexandra Chen, PhD</h3>
-                        <p className="mt-3 text-sm text-brand-muted">
-                          Synthetic biologist and medical device engineer with a decade of experience translating biosensor IP into FDA-cleared products. Previously led biosignal R&D at leading CGM and fertility-tech companies.
-                        </p>
-                        <p className="mt-4 text-xs text-brand-muted">
-                          Placeholder biography and photo — swap in official headshot and credential highlights.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-16 grid gap-8 sm:grid-cols-2">
-                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Vision</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Continuous molecular intelligence for every body.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    Pico Molecular envisions a world where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
-                  </p>
-                </div>
-                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Mission</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Translate hormone signals into better outcomes.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    We engineer wearable biosensors and AI biomarkers that empower patients, equip clinicians, and unlock new standards of women’s health delivery.
-                  </p>
-                </div>
               </div>
             </div>
           </section>
@@ -738,6 +479,102 @@ function App() {
           </div>
         </div>
       </section>
+
+          <section className="bg-white">
+            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
+              <div className="mb-10 max-w-4xl text-center">
+                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Designed to unlock value for every stakeholder.</h2>
+                <p className="mt-4 text-brand-muted">
+                  Rithm Patch meets patients where they are, equips clinicians with precise decision support, and offers partners a defensible platform to scale.
+                </p>
+              </div>
+              <div className="grid gap-8 md:grid-cols-3">
+                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
+                  <div className="h-48 w-full overflow-hidden">
+                    <img src={patientConfidence} alt="Member enjoying calm with hormone insight" className="h-full w-full object-cover" />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-4 p-8">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Patients</p>
+                    <h3 className="font-display text-2xl text-brand-dark">Better diagnosis, less pain.</h3>
+                    <p className="text-sm text-brand-muted">
+                      Replace dense symptom journaling with effortless wear. Gentle microneedles eliminate repeated lab sticks while delivering real-time clarity for IVF, PMDD, and PCOS journeys.
+                    </p>
+                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“I finally understand my cycle without living at the lab.” — Anissa, 34</blockquote>
+                  </div>
+                </div>
+                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-white shadow-sm">
+                  <div className="h-48 w-full overflow-hidden">
+                    <img src={ivfPartnership} alt="Clinician partnership supporting IVF couple" className="h-full w-full object-cover" />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-4 p-8">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Clinicians</p>
+                    <h3 className="font-display text-2xl text-brand-dark">Replace 80% of IVF blood draws.</h3>
+                    <p className="text-sm text-brand-muted">
+                      Continuous hormone panels deliver cycle visibility without daily venipuncture, freeing staff time and enhancing protocol responsiveness across reproductive endocrinology programs.
+                    </p>
+                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Our IVF mornings run twice as smoothly with Rithm data in the chart.” — Dr. Patel, REI</blockquote>
+                  </div>
+                </div>
+                <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
+                  <div className="h-48 w-full overflow-hidden">
+                    <img src={partnersUnique} alt="Strategic partner collaboration reviewing Rithm analytics" className="h-full w-full object-cover" />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-4 p-8">
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Partners</p>
+                    <h3 className="font-display text-2xl text-brand-dark">Unique IP, scalable HaaS.</h3>
+                    <p className="text-sm text-brand-muted">
+                      Combine differentiated IP with a hardware-as-a-service delivery model—recurring revenue, data network effects, and co-development opportunities across women’s health ecosystems.
+                    </p>
+                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Rithm unlocked a premium tier for our women’s health benefit in one quarter.” — Serena, Employer Benefits Lead</blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-white mt-24">
+            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
+              <div className="grid gap-12">
+                <div className="space-y-6">
+                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Founder</h2>
+                  <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
+                    <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
+                      <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl">
+                        <img src={teamPortrait} alt="Pico Molecular founding team" className="h-full w-full object-cover" />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-glow/20" />
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Founder & CEO</p>
+                        <h3 className="mt-2 font-display text-3xl text-brand-dark">Alexandra Chen, PhD</h3>
+                        <p className="mt-3 text-sm text-brand-muted">
+                          Synthetic biologist and medical device engineer with a decade of experience translating biosensor IP into FDA-cleared products. Previously led biosignal R&D at leading CGM and fertility-tech companies.
+                        </p>
+                        <p className="mt-4 text-xs text-brand-muted">
+                          Placeholder biography and photo — swap in official headshot and credential highlights.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-16 grid gap-8 sm:grid-cols-2">
+                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Vision</p>
+                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Continuous molecular intelligence for every body.</h3>
+                  <p className="mt-4 text-sm text-brand-muted">
+                    Pico Molecular envisions a world where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
+                  </p>
+                </div>
+                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Mission</p>
+                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Translate hormone signals into better outcomes.</h3>
+                  <p className="mt-4 text-sm text-brand-muted">
+                    We engineer wearable biosensors and AI biomarkers that empower patients, equip clinicians, and unlock new standards of women’s health delivery.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section id="contact" className="relative overflow-hidden bg-brand-dark text-white">
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/20 via-transparent to-brand-glow/20" />
