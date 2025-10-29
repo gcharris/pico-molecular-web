@@ -143,10 +143,10 @@ function App() {
         <header className="relative z-10 border-b border-brand-light bg-white">
           <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-12">
             <a href="#home" className="inline-flex items-center gap-4">
-              <img src={picoWordmark} alt="Pico Molecular" className="h-12 w-auto hidden sm:block" />
+              <img src={picoWordmark} alt="Pico Molecular" className="logo-wordmark h-12 w-auto hidden sm:block" />
               <img src={picoIcon} alt="Pico Molecular icon" className="h-12 w-auto sm:hidden" />
-              <span className="text-xs font-medium italic text-brand-primary/80">
-                there&apos;s method in our magic
+              <span className="text-xs font-semibold tracking-[0.3em] uppercase text-brand-primary/80">
+                Pico Molecular
               </span>
             </a>
             <div className="hidden items-center gap-8 text-sm font-medium text-brand-muted lg:flex">
