@@ -11,6 +11,8 @@ import patientConfidence from '../photos/patient-confidence.png'
 import ivfPartnership from '../photos/ivf-partnership.png'
 import pcosRelief from '../photos/pcos-relief.png'
 import dataScienceLayer from '../photos/data-science-layer.png'
+import rithmLogoMark from '../photos/rithm-logo-mark.png'
+import rithmLogoWordmark from '../photos/rithm-logo-wordmark.png'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
@@ -226,42 +228,55 @@ function App() {
 
           <section className="bg-white">
             <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="grid gap-10 lg:grid-cols-[2fr_1fr] lg:items-center">
-                <div className="grid gap-6 sm:grid-cols-2">
-                  <div className="flex flex-col items-start gap-4 rounded-3xl border border-brand-light bg-brand-light/70 p-6 shadow-sm">
-                    <img src={rithmLogo} alt="Rithm Patch logo" className="h-10 w-auto" />
-                    <h3 className="font-display text-2xl text-brand-dark">Continuous hormone intelligence you can wear.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Rithm Patch is the flagship modality of Pico Molecular—engineered to deliver clinical-grade endocrine visibility without daily lab work.
+              <div className="grid gap-6 lg:grid-cols-3">
+                <div className="relative overflow-hidden rounded-3xl border border-brand-light bg-gradient-to-br from-brand-light/40 via-white/10 to-brand-light/10 p-8 shadow-lg">
+                  <div className="absolute -top-20 -left-16 h-52 w-52 rounded-full bg-brand-primary/10 blur-3xl" />
+                  <div className="absolute -bottom-24 -right-10 h-64 w-64 rounded-full bg-brand-glow/10 blur-3xl" />
+                  <div className="relative flex flex-col items-center text-center">
+                    <img src={rithmLogoMark} alt="Rithm Patch logo mark" className="h-24 w-auto" />
+                    <img src={rithmLogoWordmark} alt="Rithm Patch wordmark" className="mt-4 h-10 w-auto" />
+                    <p className="mt-6 max-w-sm text-sm text-brand-dark/70">
+                      Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
                     </p>
                   </div>
-                  <div className="rounded-3xl border border-brand-light bg-white p-6 shadow-sm">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Why it matters</p>
-                    <h3 className="mt-3 font-display text-2xl text-brand-dark">Painless, precise, breakthrough monitoring.</h3>
-                    <ul className="mt-4 space-y-3 text-sm text-brand-muted">
-                      <li className="flex items-start gap-2">
-                        <span className="mt-1 h-2 w-2 rounded-full bg-brand-primary" />
-                        Microneedle hydrogel array maintains stable biofluid access for days.
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-1 h-2 w-2 rounded-full bg-brand-primary" />
-                        Nanocomposite EAB sensors capture ultra-low hormone signatures in real time.
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-1 h-2 w-2 rounded-full bg-brand-primary" />
-                        AI biomarkers translate data into cycle forecasts, risk alerts, and care tasks.
-                      </li>
-                    </ul>
-                  </div>
                 </div>
-                <div className="flex flex-col gap-4 rounded-3xl border border-brand-light bg-brand-light/60 p-6 text-sm text-brand-muted shadow-sm">
-                  <p>From signal capture to insight delivery, Rithm Patch orchestrates the data flow clinicians and members trust.</p>
-                  <a
-                    href="#pipeline"
-                    className="inline-flex items-center justify-center rounded-full bg-brand-dark px-5 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:-translate-y-0.5 hover:bg-brand-primary"
-                  >
-                    Learn How it Works
-                  </a>
+
+                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-primary">Why it matters</p>
+                  <h3 className="mt-3 font-display text-2xl text-brand-dark">Painless, precise, breakthrough monitoring.</h3>
+                  <ul className="mt-6 space-y-4 text-sm text-brand-muted">
+                    <li className="flex items-start gap-3">
+                      <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-brand-primary" />
+                      Microneedle hydrogel array maintains stable biofluid access for days.
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-brand-primary" />
+                      Nanocomposite EAB sensors capture ultra-low hormone signatures in real time.
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-brand-primary" />
+                      AI biomarkers translate data into cycle forecasts, risk alerts, and care tasks.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-col justify-between rounded-3xl border border-brand-light bg-brand-dark/80 p-8 text-brand-light shadow-sm">
+                  <div>
+                    <p className="text-sm text-brand-light/80">
+                      From signal capture to insight delivery, Rithm Patch orchestrates the data flow clinicians and members trust.
+                    </p>
+                  </div>
+                  <div className="mt-8 flex flex-col gap-4">
+                    <a
+                      href="#pipeline"
+                      className="inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:-translate-y-0.5 hover:bg-brand-primary/80"
+                    >
+                      Learn How It Works
+                    </a>
+                    <a href="#platform" className="text-xs font-semibold uppercase tracking-[0.35em] text-brand-light/60 transition hover:text-brand-light">
+                      View Tech Specs →
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
