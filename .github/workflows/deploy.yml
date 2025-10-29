@@ -1,90 +1,40 @@
-   name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
-   on:
-     push:
-       branches: [ main ]
+on:
+  push:
+    branches: [ main ]
 
-   permissions:
-     contents: read
-     pages: write
-     id-token: write
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-   concurrency:
-     group: "pages"
-     cancel-in-progress: false
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
-   jobs:
-     build-and-deploy:
-       runs-on: ubuntu-latest
-       steps:
-         - name: Checkout
-           uses: actions/checkout@v4
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-         - name: Install Node
-           uses: actions/setup-node@v4
-           with:
-             node-version: 20
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-         - name: Install dependencies
-           run: npm install
+      - name: Install dependencies
+        run: npm install
 
-         - name: Build
-           run: npm run build
+      - name: Build
+        run: npm run build
 
-         - name: Upload artifact
-           uses: actions/upload-pages-artifact@v3
-           with:
-             path: dist
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
 
-         - name: Deploy
-           uses: actions/deploy-pages@v4
-   ```
-
-5. Scroll down and click **Commit new file**.
-
----
-
-### 2. Turn on GitHub Pages
-
-1. In the repo, click **Settings** (top-right of the repo page).
-2. In the left sidebar, choose **Pages**.
-3. Under “Build and deployment”, set **Source** to **GitHub Actions** (it may already show the workflow you just added).
-
-GitHub will now build the site whenever you push changes.
-
----
-
-### 3. (Optional now or later) Connect your custom domain
-
-1. On the same **Pages** settings screen, find **Custom domain**.
-2. Type your domain (for example `example.com`) and click **Save**.  
-   - This matches the `CNAME` file already in the repo.
-3. Log in to your domain registrar (where you bought the domain). Add these DNS records:
-
-   | Type | Name/Host | Value                         |
-   |------|-----------|--------------------------------|
-   | A    | @         | 185.199.108.153               |
-   | A    | @         | 185.199.109.153               |
-   | A    | @         | 185.199.110.153               |
-   | A    | @         | 185.199.111.153               |
-
-   (If they allow IPv6, add AAAA records too: `2606:50c0:8000::153`, `::154`, `::155`, `::156`.)
-
-4. Wait a bit (anywhere from a few minutes to a couple of hours). GitHub will show a green check once it sees the DNS is correct, and your domain will point to the site automatically.
-
----
-
-### 4. Update the site later
-
-Whenever you add photos or text:
-
-1. Edit the files locally or through GitHub.
-2. Commit and push (or use the GitHub web editor).
-3. The workflow you created in step 1 will rebuild and redeploy the site; nothing else to do.
-
----
-
-That’s it. Once the workflow runs successfully (check the **Actions** tab to confirm), your site will be live at:
-
-- The GitHub Pages URL (`https://gcharris.github.io/pico-molecular-web/`)  
-- Plus your custom domain once the DNS has finished updating.
+      - name: Deploy
+        uses: actions/deploy-pages@v4
