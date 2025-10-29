@@ -9,10 +9,9 @@ import lifestyleVisual from '../photos/lifestyle-visual.png'
 import providerConsole from '../photos/provider-console.png'
 import patientConfidence from '../photos/patient-confidence.png'
 import ivfPartnership from '../photos/ivf-partnership.png'
-import pcosRelief from '../photos/pcos-relief.png'
+import partnersUnique from '../photos/partners-unique-haas.png'
 import dataScienceLayer from '../photos/data-science-layer.png'
 import rithmLogoMark from '../photos/rithm-logo-mark-transparent.png'
-import rithmLogoWordmark from '../photos/rithm-logo-wordmark.png'
 import rithmWord from '../photos/rithm-word-transparent.png'
 
 const navigation = [
@@ -191,7 +190,10 @@ function App() {
         <header className="relative z-10 border-b border-brand-light bg-white">
           <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-12">
             <a href="#home" className="inline-flex items-center gap-4" aria-label="Pico Molecular">
-              <img src={picoIcon} alt="" className="h-12 w-auto" />
+              <img src={picoIcon} alt="Pico Molecular logo" className="h-12 w-auto" />
+              <span className="hidden text-base font-semibold tracking-[0.32em] uppercase text-brand-dark sm:inline-flex lg:text-lg">
+                Pico Molecular
+              </span>
             </a>
             <div className="hidden items-center gap-8 text-sm font-medium text-brand-muted lg:flex">
               {navigation.map((item) => (
@@ -228,7 +230,7 @@ function App() {
               </div>
 
               <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
-                <div className="flex-1 space-y-8">
+                <div className="order-2 flex-1 space-y-8 lg:order-1">
                   <span className="hero-pill inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold">
                     Next-Gen Hormone Biosensing
                   </span>
@@ -250,7 +252,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="flex-1">
+                <div className="order-1 flex-1 lg:order-2">
                   <div className="relative mx-auto max-w-md">
                     <div className="absolute -top-10 -right-10 hidden h-24 w-24 rounded-full bg-gradient-to-br from-brand-primary/40 to-brand-glow/30 blur-2xl sm:block" />
                     <div className="relative overflow-hidden rounded-[32px] border border-white/20 bg-gradient-to-br from-brand-primary/15 via-white/10 to-brand-accent/15 shadow-2xl">
@@ -437,7 +439,7 @@ function App() {
                 </div>
                 <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
                   <div className="h-48 w-full overflow-hidden">
-                    <img src={pcosRelief} alt="Partner ecosystem celebrating hormone clarity" className="h-full w-full object-cover" />
+                    <img src={partnersUnique} alt="Strategic partner collaboration reviewing Rithm analytics" className="h-full w-full object-cover" />
                   </div>
                   <div className="flex flex-1 flex-col gap-4 p-8">
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Partners</p>
@@ -543,7 +545,7 @@ function App() {
 
           <section className="bg-white">
             <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+              <div className="grid gap-12">
                 <div className="space-y-6">
                   <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Founder</h2>
                   <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
@@ -563,30 +565,6 @@ function App() {
                         </p>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div className="space-y-6">
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Scientific Advisors</h2>
-                  <p className="text-sm text-brand-muted">
-                    A multidisciplinary advisory board spanning reproductive endocrinology, biosensors, and AI safety.
-                  </p>
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {[
-                      { name: 'Dr. Priya Natarajan', detail: 'Reproductive Endocrinologist, Stanford Medicine', asset: '/photos/advisor-natarajan-placeholder.jpg' },
-                      { name: 'Prof. Miguel Ortega', detail: 'Nanomaterials Lab, MIT', asset: '/photos/advisor-ortega-placeholder.jpg' },
-                      { name: 'Dr. Hannah Liu', detail: 'Former FDA Digital Health Reviewer', asset: '/photos/advisor-liu-placeholder.jpg' },
-                      { name: 'Prof. Julian Smith', detail: 'AI Assurance Lead, Oxford', asset: '/photos/advisor-smith-placeholder.jpg' },
-                    ].map((advisor) => (
-                      <div key={advisor.name} className="rounded-3xl border border-brand-light bg-brand-light/50 p-5 shadow-sm">
-                        <div
-                          className="h-20 w-full overflow-hidden rounded-2xl bg-cover bg-center"
-                          style={{ backgroundImage: `url(${advisor.asset})` }}
-                        />
-                        <h3 className="mt-4 font-display text-xl text-brand-dark">{advisor.name}</h3>
-                        <p className="mt-2 text-xs text-brand-muted">{advisor.detail}</p>
-                        <p className="mt-3 text-[11px] text-brand-muted">Replace with official portraits or partner logos.</p>
-                      </div>
-                    ))}
                   </div>
                 </div>
               </div>
