@@ -23,7 +23,7 @@ function SplashGate({ onSuccess, logoSrc }) {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#f8e6da] via-[#fff2eb] to-[#fff8f2]">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(248,204,178,0.28),transparent_55%)]" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(248,204,178,0.28),transparent_55%)]" />
 
       <div className="relative mx-auto flex min-h-screen w-full max-w-[1400px] flex-col items-center justify-center gap-10 px-6 py-12 sm:px-10 lg:flex-row lg:gap-20">
         <div className="flex w-full items-stretch justify-center lg:w-[45%]">
@@ -32,7 +32,7 @@ function SplashGate({ onSuccess, logoSrc }) {
               src={founderBackground}
               alt="Founder portrait"
               className="pointer-events-none h-full max-h-[78vh] w-full select-none object-cover"
-              style={{ filter: 'contrast(1.04) saturate(1.03)', objectPosition: 'center' }}
+              style={{ filter: 'none', objectPosition: 'center 40%' }}
             />
           </div>
         </div>
@@ -114,8 +114,8 @@ function SplashGate({ onSuccess, logoSrc }) {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_left,rgba(253,215,196,0.4),transparent_65%)]" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_right,rgba(250,206,184,0.4),transparent_65%)]" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_left,rgba(253,215,196,0.4),transparent_65%)]" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_right,rgba(250,206,184,0.4),transparent_65%)]" />
 
       <div className="lg:hidden">
         <div className="absolute inset-0 -z-10 opacity-90">
