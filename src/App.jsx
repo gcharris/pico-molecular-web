@@ -480,14 +480,16 @@ function App() {
               </div>
               <div className="steps-flow steps-container">
                 {steps.map((step, index) => (
-                  <Fragment key={step.id}>
-                    <div className={`step-card ${step.gradientClass}`}>
+                   <Fragment key={step.id}>
+                    <div className="step-card-wrapper">
                       <div className="step-number">{step.id}</div>
-                      <div className="step-icon" aria-hidden="true">
-                        {step.icon}
+                      <div className={`step-card ${step.gradientClass}`}>
+                        <div className="step-icon" aria-hidden="true">
+                          {step.icon}
+                        </div>
+                        <h3 className="step-title">{step.title}</h3>
+                        <p className="step-description">{step.description}</p>
                       </div>
-                      <h3 className="step-title">{step.title}</h3>
-                      <p className="step-description">{step.description}</p>
                     </div>
                     {index < steps.length - 1 ? (
                       <div className="step-arrow" aria-hidden="true">
