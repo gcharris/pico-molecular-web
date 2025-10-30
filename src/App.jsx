@@ -431,9 +431,9 @@ function App() {
           <section className="bg-white">
             <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
               <div className="mb-10 max-w-4xl text-center">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Designed to unlock value for every stakeholder.</h2>
+                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Envisioned Impact.</h2>
                 <p className="mt-4 text-brand-muted">
-                  Rithm Patch meets patients where they are, equips clinicians with precise decision support, and offers partners a defensible platform to scale.
+                  A glimpse of how Rithm could help patients, clinicians, and partners—once this vision becomes real.
                 </p>
               </div>
               <div className="grid gap-8 md:grid-cols-3">
@@ -442,12 +442,11 @@ function App() {
                     <img src={patientConfidence} alt="Member enjoying calm with hormone insight" className="h-full w-full object-cover" />
                   </div>
                   <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Patients</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Better diagnosis, less pain.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Replace dense symptom journaling with effortless wear. Gentle microneedles eliminate repeated lab sticks while delivering real-time clarity for IVF, PMDD, and PCOS journeys.
+                    <h3 className="font-display text-2xl text-brand-dark">Patient (IVF | PMDD | PCOS)</h3>
+                    <p className="text-base text-brand-dark/80">
+                      Fewer needles. More clarity. Continuous hormone insight could make care less stressful and more personal.
                     </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“I finally understand my cycle without living at the lab.” — Anissa, 34</blockquote>
+                    <p className="mt-auto text-xs italic text-brand-muted/90">*Illustrative—based on our product vision.*</p>
                   </div>
                 </div>
                 <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-white shadow-sm">
@@ -455,12 +454,11 @@ function App() {
                     <img src={ivfPartnership} alt="Clinician partnership supporting IVF couple" className="h-full w-full object-cover" />
                   </div>
                   <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Clinicians</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Replace 80% of IVF blood draws.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Continuous hormone panels deliver cycle visibility without daily venipuncture, freeing staff time and enhancing protocol responsiveness across reproductive endocrinology programs.
+                    <h3 className="font-display text-2xl text-brand-dark">Clinician</h3>
+                    <p className="text-base text-brand-dark/80">
+                      Objective trends at your fingertips—fewer blood draws, smarter timing, and data that translates into action.
                     </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Our IVF mornings run twice as smoothly with Rithm data in the chart.” — Dr. Patel, REI</blockquote>
+                    <p className="mt-auto text-xs italic text-brand-muted/90">*Concept preview—not clinical guidance.*</p>
                   </div>
                 </div>
                 <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 shadow-sm">
@@ -468,15 +466,17 @@ function App() {
                     <img src={partnersUnique} alt="Partner ecosystem celebrating hormone clarity" className="h-full w-full object-cover" />
                   </div>
                   <div className="flex flex-1 flex-col gap-4 p-8">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Partners</p>
-                    <h3 className="font-display text-2xl text-brand-dark">Unique IP, scalable HaaS.</h3>
-                    <p className="text-sm text-brand-muted">
-                      Combine differentiated IP with a hardware-as-a-service delivery model—recurring revenue, data network effects, and co-development opportunities across women’s health ecosystems.
+                    <h3 className="font-display text-2xl text-brand-dark">Partner</h3>
+                    <p className="text-base text-brand-dark/80">
+                      A new stream of longitudinal hormone data for research, trials, and digital health integrations.
                     </p>
-                    <blockquote className="mt-auto text-sm italic text-brand-dark/70">“Rithm unlocked a premium tier for our women’s health benefit in one quarter.” — Serena, Employer Benefits Lead</blockquote>
+                    <p className="mt-auto text-xs italic text-brand-muted/90">*Opportunity area—partnerships are targets, not yet formalized.*</p>
                   </div>
                 </div>
               </div>
+              <p className="mt-10 text-center text-xs italic text-brand-muted/90">
+                *These stories are aspirational and for private review. Not FDA-approved; not medical advice.*
+              </p>
             </div>
           </section>
 
