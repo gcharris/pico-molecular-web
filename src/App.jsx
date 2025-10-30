@@ -470,12 +470,12 @@ function App() {
 
           <section className="three-clicks-section bg-white">
              <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-               <div className="mb-10 max-w-3xl text-center">
-                 <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">From wear to wisdom in three clicks.</h2>
-                 <p className="mt-4 text-brand-muted">
-                   Microneedle arrays, electrochemical EAB sensors, and AI biomarker engines work together to transform surface-level sampling into clinically meaningful hormone intelligence.
-                 </p>
-               </div>
+              <div className="three-clicks-header">
+                <h2 className="three-clicks-title font-display text-4xl text-brand-dark sm:text-5xl">From wear to wisdom in three clicks.</h2>
+                <p className="three-clicks-subtitle mt-4 text-brand-muted">
+                  Microneedle arrays, electrochemical EAB sensors, and AI biomarker engines work together to transform surface-level sampling into clinically meaningful hormone intelligence.
+                </p>
+              </div>
               <div className="steps-flow">
                 {steps.map((step, index) => (
                   <Fragment key={step.id}>
