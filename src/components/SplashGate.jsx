@@ -22,20 +22,20 @@ function SplashGate({ onSuccess, logoSrc }) {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-r from-[#041020] via-[#0a1b32] to-[#041020]">
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col lg:flex-row">
-        <div className="flex w-full items-center justify-center px-6 py-12 lg:w-2/5 lg:px-10">
-          <div className="relative flex items-center justify-center overflow-hidden rounded-[28px] bg-[#061226] p-6 shadow-[0_30px_80px_rgba(5,15,35,0.55)] lg:h-[85vh] lg:max-w-full">
+      <div className="relative mx-auto flex min-h-screen w-full max-w-[1400px] flex-col gap-10 px-6 py-12 sm:px-10 lg:flex-row lg:items-center lg:justify-center lg:gap-16">
+        <div className="flex w-full items-center justify-center lg:w-[45%]">
+          <div className="relative flex h-full w-full max-w-[520px] items-center justify-center overflow-hidden rounded-[32px] bg-[#061226] p-6 shadow-[0_35px_90px_rgba(5,15,35,0.55)] lg:h-[82vh]">
             <img
               src={founderBackground}
               alt="Founder portrait"
-              className="h-full w-auto max-h-[70vh] object-contain pointer-events-none select-none"
+              className="pointer-events-none h-full max-h-[75vh] w-auto select-none object-contain"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#041020]/55 via-transparent to-[#041020]/5" />
           </div>
         </div>
 
-        <div className="flex w-full items-center justify-center px-6 pb-16 lg:w-3/5 lg:px-16 lg:pb-0">
-          <div className="w-full max-w-[480px] rounded-2xl bg-[rgba(20,40,70,0.82)] px-10 py-12 text-white shadow-[0_25px_70px_rgba(0,0,0,0.45)] backdrop-blur">
+        <div className="flex w-full items-center justify-center pb-16 lg:w-[55%] lg:justify-start lg:pb-0">
+          <div className="w-full max-w-[520px] rounded-2xl bg-[rgba(20,40,70,0.82)] px-12 py-14 text-white shadow-[0_28px_80px_rgba(0,0,0,0.45)] backdrop-blur">
             <div className="flex flex-col items-center text-center">
               <img src={logoSrc} alt="Pico Molecular logo" className="mb-6 h-auto w-[80px]" />
               <h1 className="text-[28px] font-semibold uppercase tracking-[0.14em] text-white">
@@ -49,7 +49,7 @@ function SplashGate({ onSuccess, logoSrc }) {
               <p>Step in as a trusted friend, keep the dream close, and enjoy the tour. ✨</p>
             </div>
 
-            <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-4 sm:flex-row">
               <input
                 type="password"
                 value={password}
