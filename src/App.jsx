@@ -153,6 +153,29 @@ const partnerHighlights = [
   },
 ]
 
+const advisorExpertise = [
+  {
+    label: 'Reproductive Endocrinology & Women’s Health',
+    description: 'Guiding protocols that honor hormonal complexity across IVF, PMDD, PCOS, and healthy aging cohorts.',
+  },
+  {
+    label: 'Biosensor Engineering & Nanomaterials',
+    description: 'Informing microneedle, hydrogel, and electrochemical sensing breakthroughs for long-wear fidelity.',
+  },
+  {
+    label: 'AI Safety & Regulatory Compliance',
+    description: 'Shaping our machine learning lifecycle, bias monitoring, and evidence standards for frontline deployment.',
+  },
+  {
+    label: 'FDA & Digital Health Commercialization',
+    description: 'Charting regulatory pathways, reimbursement readiness, and launch playbooks for women’s health innovation.',
+  },
+  {
+    label: 'Obstetrics, Gynecology, and Women’s Wellness',
+    description: 'Ensuring the product experience supports whole-person care, clinician workflow fit, and inclusive access.',
+  },
+]
+
 const stats = [
   { label: 'Signal Fidelity', value: '96.4%', caption: 'Average hormone signature accuracy versus lab assays.' },
   { label: 'Wear Time', value: '72 hrs', caption: 'Comfort-tested continuous wear per disposable patch.' },
@@ -785,26 +808,22 @@ function App() {
                 <div className="space-y-6">
                   <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Scientific Advisors</h2>
                   <p className="text-sm text-brand-muted">
-                    A multidisciplinary advisory board spanning reproductive endocrinology, biosensors, and AI safety.
+                    A world-class advisory network is critical to our vision. We&apos;re actively building relationships with leaders in the following fields:
                   </p>
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {[
-                      { name: 'Dr. Priya Natarajan', detail: 'Reproductive Endocrinologist, Stanford Medicine', asset: '/photos/advisor-natarajan-placeholder.jpg' },
-                      { name: 'Prof. Miguel Ortega', detail: 'Nanomaterials Lab, MIT', asset: '/photos/advisor-ortega-placeholder.jpg' },
-                      { name: 'Dr. Hannah Liu', detail: 'Former FDA Digital Health Reviewer', asset: '/photos/advisor-liu-placeholder.jpg' },
-                      { name: 'Prof. Julian Smith', detail: 'AI Assurance Lead, Oxford', asset: '/photos/advisor-smith-placeholder.jpg' },
-                    ].map((advisor) => (
-                      <div key={advisor.name} className="rounded-3xl border border-brand-light bg-brand-light/50 p-5 shadow-sm">
-                        <div
-                          className="h-20 w-full overflow-hidden rounded-2xl bg-cover bg-center"
-                          style={{ backgroundImage: `url(${advisor.asset})` }}
-                        />
-                        <h3 className="mt-4 font-display text-xl text-brand-dark">{advisor.name}</h3>
-                        <p className="mt-2 text-xs text-brand-muted">{advisor.detail}</p>
-                        <p className="mt-3 text-[11px] text-brand-muted">Replace with official portraits or partner logos.</p>
+                  <div className="advisor-grid">
+                    {advisorExpertise.map((item) => (
+                      <div key={item.label} className="advisor-card">
+                        <div className="advisor-icon" aria-hidden="true">✶</div>
+                        <div>
+                          <h3 className="advisor-card__title">{item.label}</h3>
+                          <p className="advisor-card__detail">{item.description}</p>
+                        </div>
                       </div>
                     ))}
                   </div>
+                  <p className="advisor-disclaimer text-center text-[13px] italic text-brand-muted/80">
+                    *Scientific advisory collaborations are aspirational and represent our intended fields of expertise; formal agreements are in development.*
+                  </p>
                 </div>
               </div>
               <div className="mt-16 grid gap-8 sm:grid-cols-2">
