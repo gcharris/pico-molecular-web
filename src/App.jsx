@@ -140,16 +140,16 @@ const validationMilestones = [
 
 const partnerHighlights = [
   {
-    title: 'Clinics & Virtual Care Networks',
-    detail: 'Deploy Rithm Patch as a turnkey program with white-labeled care pathways and reimbursement guides.',
+    title: 'Target Clinical Partners',
+    detail: 'Target: Deploy Rithm Patch as a turnkey program with white-labeled care pathways and reimbursement guides.',
   },
   {
-    title: 'Employers & Benefits Platforms',
-    detail: 'Deliver hormone health as a core benefit with measurable outcomes and population-level reporting.',
+    title: 'Envisioned Employer Collaborations',
+    detail: 'Opportunity: Deliver hormone health as a core benefit with measurable outcomes and population-level reporting.',
   },
   {
-    title: 'Life Sciences & Research Sponsors',
-    detail: 'Unlock granular endocrine data streams for trials, companion diagnostics, and biomarker discovery.',
+    title: 'Research & Pharma Opportunities',
+    detail: 'Vision: Unlock granular endocrine data streams for trials, companion diagnostics, and digital health integrations.',
   },
 ]
 
@@ -738,9 +738,9 @@ function App() {
           <section id="partners" className="bg-white">
             <div className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
               <div className="mb-10">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Partnership tracks tailored to your mission.</h2>
+                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Strategic Alignment: Target Partnership Ecosystem.</h2>
                 <p className="mt-4 text-brand-muted">
-                  Choose a modular launch plan or co-develop with Pico Molecular&apos;s applied science team.
+                  We&apos;re building relationships with leading organizations across clinical, research, and commercial sectors—here&apos;s the vision for collaboration.
                 </p>
               </div>
               <div className="grid gap-8 md:grid-cols-3">
@@ -748,10 +748,13 @@ function App() {
                   <div key={partner.title} className="rounded-3xl border border-brand-light bg-brand-light/60 p-6 shadow-sm">
                     <h3 className="font-display text-2xl text-brand-dark">{partner.title}</h3>
                     <p className="mt-4 text-sm text-brand-muted">{partner.detail}</p>
-                    <div className="mt-6 text-sm text-brand-muted/80">Collaborate with us to tailor deployment, pricing, and integrations for your organization.</div>
+                    <div className="mt-6 text-sm text-brand-muted/80">We&apos;re actively exploring co-development models, pilot scopes, and integration paths with aligned partners.</div>
                   </div>
                 ))}
           </div>
+              <p className="mt-10 text-center text-xs italic text-brand-muted/80">
+                *Partnerships represent strategic targets and opportunities; not yet formalized agreements. We are actively developing relationships with organizations aligned with our vision.*
+              </p>
         </div>
       </section>
 
