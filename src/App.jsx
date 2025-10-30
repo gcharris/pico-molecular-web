@@ -1007,19 +1007,21 @@ function App() {
         </main>
 
         <footer className="border-t border-white/40 bg-white/80 py-10 backdrop-blur">
-          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 text-sm text-brand-muted sm:flex-row lg:px-12">
-            <p>&copy; {new Date().getFullYear()} Pico Molecular. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#privacy" className="hover:text-brand-primary">Privacy</a>
-              <a href="#security" className="hover:text-brand-primary">Security</a>
-              <a href="#press" className="hover:text-brand-primary">Press Kit</a>
+          <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-sm text-brand-muted lg:px-12">
+            <div className="flex flex-col items-center gap-4 sm:w-full sm:flex-row sm:items-start sm:justify-between">
+              <p className="text-center sm:text-left">&copy; {new Date().getFullYear()} Pico Molecular. All rights reserved.</p>
+              <div className="flex gap-6">
+                <a href="#privacy" className="hover:text-brand-primary">Privacy</a>
+                <a href="#security" className="hover:text-brand-primary">Security</a>
+                <a href="#press" className="hover:text-brand-primary">Press Kit</a>
+              </div>
             </div>
-            <div className="mt-6 text-sm text-brand-light/60">
-               This concept site is for vision alignment. Replace this placeholder footer with legal information as content evolves.
-             </div>
-             <p className="mt-4 text-xs text-brand-light/50">
-               DISCLAIMER: This site presents a conceptual vision for Pico Molecular. Performance claims, partnerships, advisory relationships, and testimonials are aspirational and represent development targets. Not FDA-approved. For private evaluation only.
-             </p>
+            <p className="w-full text-center text-xs text-brand-muted">
+              This concept site is for vision alignment. Replace this placeholder footer with legal information as content evolves.
+            </p>
+            <p className="w-full text-center text-xs text-brand-muted">
+              DISCLAIMER: This site presents a conceptual vision for Pico Molecular. Performance claims, partnerships, advisory relationships, and testimonials are aspirational and represent development targets. Not FDA-approved. For private evaluation only.
+            </p>
           </div>
         </footer>
       </div>
