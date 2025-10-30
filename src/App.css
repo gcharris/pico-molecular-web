@@ -418,9 +418,9 @@ a {
   position: relative;
   margin: 5rem 0;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  min-height: clamp(540px, 82vh, 760px);
+  min-height: clamp(700px, 90vh, 900px);
 }
 
 .mission-vision-overlay {
