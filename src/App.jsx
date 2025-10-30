@@ -498,33 +498,39 @@ function App() {
                 {[
                   {
                     label: 'Continuous Monitoring',
-                    rithm: 'Yes — 24/7 hormone signal stream with AI coaching.',
-                    blood: 'No — episodic draws capture isolated points.',
-                    lzh: 'Partial — intermittent tracking, limited hormone scope.',
+                    rithm: 'Target: 24/7 hormone signal stream with adaptive AI coaching.',
+                    blood: 'Status quo: Episodic draws capture isolated points.',
+                    lzh: 'Current: Intermittent tracking with limited hormone scope.',
                   },
                   {
                     label: 'Pain Level',
-                    rithm: 'Painless microneedle wear; no daily clinic visits.',
-                    blood: 'Invasive venipuncture; recurrent appointments.',
-                    lzh: 'Low — surface sensors, but narrow biomarker coverage.',
+                    rithm: 'Aspirational: Painless microneedle wear—no daily clinic visits.',
+                    blood: 'Current: Invasive venipuncture and recurring appointments.',
+                    lzh: 'Current: Low-discomfort surface sensors with narrow coverage.',
                   },
                   {
                     label: 'Data Intelligence',
-                    rithm: 'Predictive digital biomarkers with clinician workflow integration.',
-                    blood: 'Manual interpretation; delays between draw and action.',
-                    lzh: 'Basic trend outputs, limited provider integrations.',
+                    rithm: 'Planned: Predictive digital biomarkers and integrated decision support.',
+                    blood: 'Current: Manual interpretation with delays between draw and action.',
+                    lzh: 'Current: Basic trend outputs and limited provider integrations.',
+                  },
+                  {
+                    label: 'Clinical Workflow',
+                    rithm: 'Vision: Embedded pathways, automation hooks, and care team alerts.',
+                    blood: 'Current: Paper orders, manual scheduling, and follow-up calls.',
+                    lzh: 'Current: Consumer-first flows; minimal clinic integration.',
                   },
                   {
                     label: 'IP Moat',
-                    rithm: 'Patented microneedles + EAB sensors + AI stack.',
-                    blood: 'Commodity lab infrastructure.',
-                    lzh: 'Software-first IP, hardware sourced from partners.',
+                    rithm: 'Strategy: Layered sensor, chemistry, and AI claims under development.',
+                    blood: 'Current: Commodity lab infrastructure and processes.',
+                    lzh: 'Current: Software-first IP; hardware sourced via partners.',
                   },
                   {
-                    label: 'Market Approach',
-                    rithm: 'Hardware-as-a-service for clinics, employers, and research.',
-                    blood: 'Fee-for-service diagnostics.',
-                    lzh: 'Direct-to-consumer wellness focus.',
+                    label: 'IP Protection',
+                    rithm: 'Triple-layer patents planned.',
+                    blood: 'Not applicable.',
+                    lzh: 'Foundational UC patents.',
                   },
                 ].map((row) => (
                   <div key={row.label} className="grid grid-cols-4 border-t border-brand-light/60">
@@ -535,6 +541,9 @@ function App() {
                   </div>
                 ))}
               </div>
+              <p className="mt-4 text-[13px] italic text-brand-muted/80">
+                *All specifications are project targets; not yet validated. For private vision viewing only.*
+              </p>
             </div>
           </section>
 
