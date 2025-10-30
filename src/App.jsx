@@ -192,38 +192,37 @@ const featureHighlights = [
   {
     tone: 'navy',
     label: 'Why it matters',
-    title: 'Painless, precise, breakthrough monitoring.',
-    description:
-      'Microneedle hydrogel access, nanocomposite sensing, and adaptive biomarkers converge so hormone care finally has reliable signal.',
+    title: 'Painless, precise breakthrough monitoring.',
+    summary:
+      'Microneedle hydrogel access, nanocomposite sensing, and adaptive biomarkers deliver lab-grade signal without daily sticks.',
     points: [
-      'Microneedle hydrogel array maintains stable biofluid access for days without irritation.',
-      'Nanocomposite EAB sensors capture ultra-low hormone signatures in real time.',
-      'AI biomarkers translate trends into cycle forecasts, risk alerts, and guided care tasks.',
+      'Microneedle array keeps stable biofluid access for days.',
+      'Nanocomposite sensors capture low-level hormone shifts in real time.',
+      'AI biomarkers surface cycle forecasts, risk alerts, and actions early.',
     ],
   },
   {
     tone: 'royal',
     label: 'How it flows',
     title: 'From capture to insight, orchestrated for clinicians.',
-    description:
-      'The Rithm Patch bridges wetware and software—automating acquisition, calibration, and delivery of endocrine intelligence.',
+    summary:
+      'Edge intelligence, cloud analytics, and configurable workflows move from raw biosignal capture to clear decision support.',
     points: [
-      'Edge intelligence harmonizes biosignals before they leave the body.',
-      'Cloud analytics layers protocols, population benchmarks, and personalization.',
-      'Clinicians receive configurable alerts, visits, and summaries that slot into existing workflows.',
+      'Edge intelligence cleans and calibrates signals before sync.',
+      'Cloud analytics layers protocols, cohorts, and personalization.',
+      'Configurable alerts and summaries drop into existing workflows.',
     ],
-    cta: { href: '#pipeline', label: 'Learn how it works' },
   },
   {
     tone: 'dusk',
     label: 'What teams gain',
     title: 'Continuous hormone intelligence you can wear.',
-    description:
-      'Give members clarity every day while unlocking new services, revenue, and research partnerships.',
+    summary:
+      'Members, clinicians, and partners unlock new clarity, capacity, and models with wearable endocrine signal fidelity.',
     points: [
-      'Members move from symptom journaling to data-backed decisions.',
-      'Clinics replace 80% of routine blood draws while boosting capacity.',
-      'Partners layer unique IP and hardware-as-a-service into their platforms.',
+      'Members shift from symptom tracking to data-backed choices.',
+      'Clinics replace bulk blood draws and expand visit capacity.',
+      'Partners layer unique IP and recurring hardware-as-a-service.',
     ],
   },
 ]
@@ -372,8 +371,8 @@ function App() {
                 {featureHighlights.map((card) => (
                   <div key={card.title} className={`feature-card feature-card--${card.tone}`}>
                     <p className="feature-card__label">{card.label}</p>
-                    <h3>{card.title}</h3>
-                    <p className="feature-card__lead">{card.description}</p>
+                    <h3 className="feature-card__title">{card.title}</h3>
+                    <p className="feature-card__summary">{card.summary}</p>
                     {card.points && (
                       <ul className="feature-card__list">
                         {card.points.map((point) => (
@@ -383,11 +382,6 @@ function App() {
                           </li>
                         ))}
                       </ul>
-                    )}
-                    {card.cta && (
-                      <a href={card.cta.href} className="feature-card__cta">
-                        {card.cta.label}
-                      </a>
                     )}
                   </div>
                 ))}
