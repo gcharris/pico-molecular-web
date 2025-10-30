@@ -217,10 +217,8 @@ a {
 }
 
 .validation-columns {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 3rem;
-  align-items: stretch;
 }
 
 .validation-column {
@@ -233,17 +231,13 @@ a {
 
 @media (min-width: 1024px) {
   .validation-columns {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 3rem;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    align-items: start;
   }
 
-  .validation-column--roadmap {
-    flex: 1.2;
-  }
-
+  .validation-column--roadmap,
   .validation-column--blueprint {
-    flex: 0.9;
+    align-self: start;
   }
 }
 
