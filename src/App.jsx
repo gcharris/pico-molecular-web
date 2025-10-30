@@ -702,12 +702,12 @@ function App() {
                       </div>
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Founder &amp; CEO</p>
-                        <h3 className="mt-2 font-display text-3xl text-brand-dark">Alexandra Chen, PhD</h3>
+                        <h3 className="mt-2 font-display text-3xl text-brand-dark">Josephine Carr-Harris</h3>
                         <p className="mt-3 text-sm text-brand-muted">
-                          Synthetic biologist and medical device engineer with a decade of experience translating biosensor IP into FDA-cleared products. Previously led biosignal R&amp;D at leading CGM and fertility-tech companies.
+                          Josephine Carr-Harris is a digital health founder and CEO who blends biomedical engineering rigor with startup execution. An iBiomed graduate from McMaster University, she pairs technical fluency with strategic leadership to translate science into market-ready experiences.
                         </p>
-                        <p className="mt-4 text-xs text-brand-muted">
-                          Placeholder biography and photo — swap in official headshot and credential highlights.
+                        <p className="mt-4 text-sm text-brand-muted">
+                          She has supported a $1.5M seed round, led deep-tech diligence, and architected go-to-market plans across early-stage ventures while guiding product design, business development, and innovation programs in the health ecosystem.
                         </p>
                       </div>
                     </div>
