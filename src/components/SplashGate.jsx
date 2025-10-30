@@ -21,64 +21,76 @@ function SplashGate({ onSuccess, logoSrc }) {
   }
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#040b1a] via-[#091a2d] to-[#02060f]">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <img
-          src={founderBackground}
-          alt="Founder portrait"
-          className="h-full max-h-screen w-auto object-contain pointer-events-none select-none"
-          style={{ filter: 'blur(0.5px)' }}
-        />
-      </div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_left,rgba(4,11,26,0.85),transparent_45%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,rgba(4,11,26,0.85),transparent_45%)]" />
-
-      <div className="relative flex min-h-screen items-end justify-center px-6 pb-16 sm:pb-20">
-        <div className="w-[90%] max-w-[650px] rounded-xl bg-[rgba(20,40,70,0.75)] px-8 py-6 text-white shadow-[0_15px_60px_rgba(0,0,0,0.4)] backdrop-blur-sm sm:w-[80%] sm:px-10 sm:py-7 md:w-full md:px-12 md:py-8">
-          <div className="flex flex-col items-center text-center">
-            <img src={logoSrc} alt="Pico Molecular logo" className="mb-5 h-auto w-[60px]" />
-            <h1 className="text-[24px] font-semibold uppercase tracking-[0.14em] text-white">
-              WELCOME TO THE VISION
-            </h1>
-          </div>
-
-          <div className="mt-[18px] space-y-4 text-[16px] text-white/95 [line-height:1.6]">
-            <p>Hey—glad you&apos;re here. This is a peek at what Pico Molecular could grow into.</p>
-            <p>Everything inside is aspirational—the science, the partnerships, the wins we&apos;re working toward.</p>
-            <p>Step in as a trusted friend, keep the dream close, and enjoy the tour. ✨</p>
-          </div>
-
-          <form onSubmit={handleSubmit} className="mt-[25px] flex flex-col gap-3 md:flex-row">
-            <input
-              type="password"
-              value={password}
-              onChange={(event) => {
-                setPassword(event.target.value)
-                if (error) {
-                  setError('')
-                }
-              }}
-              placeholder="Enter Password"
-              className="h-[52px] w-full rounded-lg border border-white/25 bg-white/10 px-4 text-[16px] text-white placeholder:text-white/60 focus:border-[#4a90e2]/80 focus:outline-none focus:ring-4 focus:ring-[#4a90e2]/30 md:flex-1"
-              autoComplete="off"
-              autoFocus
+    <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-r from-[#041020] via-[#0a1b32] to-[#041020]">
+      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col lg:flex-row">
+        <div className="flex w-full items-center justify-center px-6 py-12 lg:w-2/5 lg:px-10">
+          <div className="relative flex items-center justify-center overflow-hidden rounded-[28px] bg-[#061226] p-6 shadow-[0_30px_80px_rgba(5,15,35,0.55)] lg:h-[85vh] lg:max-w-full">
+            <img
+              src={founderBackground}
+              alt="Founder portrait"
+              className="h-full w-auto max-h-[70vh] object-contain pointer-events-none select-none"
             />
-            <button
-              type="submit"
-              className="h-[52px] w-full rounded-lg bg-[#4a90e2] text-[17px] font-semibold text-white transition duration-300 hover:scale-[1.02] hover:bg-[#5aa4ff] focus:outline-none focus:ring-4 focus:ring-[#4a90e2]/40 md:w-auto md:px-6"
-            >
-              Enter the Vision
-            </button>
-          </form>
-          {error ? (
-            <p role="alert" className="mt-2 text-sm font-medium text-red-200">
-              {error}
-            </p>
-          ) : null}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#041020]/55 via-transparent to-[#041020]/5" />
+          </div>
+        </div>
 
-          <p className="mt-5 text-center text-[12px] italic text-white/70">
-            *Not FDA-approved. Just a prototype concept.*
-          </p>
+        <div className="flex w-full items-center justify-center px-6 pb-16 lg:w-3/5 lg:px-16 lg:pb-0">
+          <div className="w-full max-w-[480px] rounded-2xl bg-[rgba(20,40,70,0.82)] px-10 py-12 text-white shadow-[0_25px_70px_rgba(0,0,0,0.45)] backdrop-blur">
+            <div className="flex flex-col items-center text-center">
+              <img src={logoSrc} alt="Pico Molecular logo" className="mb-6 h-auto w-[80px]" />
+              <h1 className="text-[28px] font-semibold uppercase tracking-[0.14em] text-white">
+                WELCOME TO THE VISION
+              </h1>
+            </div>
+
+            <div className="mt-6 space-y-4 text-[16px] text-white/95 [line-height:1.6]">
+              <p>Hey—glad you&apos;re here. This is a peek at what Pico Molecular could grow into.</p>
+              <p>Everything inside is aspirational—the science, the partnerships, the wins we&apos;re working toward.</p>
+              <p>Step in as a trusted friend, keep the dream close, and enjoy the tour. ✨</p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <input
+                type="password"
+                value={password}
+                onChange={(event) => {
+                  setPassword(event.target.value)
+                  if (error) {
+                    setError('')
+                  }
+                }}
+                placeholder="Enter Password"
+                className="h-[56px] w-full rounded-lg border border-white/25 bg-white/10 px-5 text-[16px] text-white placeholder:text-white/65 focus:border-[#4a90e2]/80 focus:outline-none focus:ring-4 focus:ring-[#4a90e2]/30 sm:flex-1"
+                autoComplete="off"
+                autoFocus
+              />
+              <button
+                type="submit"
+                className="h-[56px] w-full rounded-lg bg-[#4a90e2] text-[17px] font-semibold text-white transition duration-300 hover:scale-[1.02] hover:bg-[#5aa4ff] focus:outline-none focus:ring-4 focus:ring-[#4a90e2]/35 sm:w-auto sm:px-6"
+              >
+                Enter the Vision
+              </button>
+            </form>
+
+            {error ? (
+              <p role="alert" className="mt-3 text-sm font-medium text-red-200">
+                {error}
+              </p>
+            ) : null}
+
+            <p className="mt-6 text-center text-[12px] italic text-white/70">
+              *Not FDA-approved. Just a prototype concept.*
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#041020]/60 via-transparent to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#041020]/60 via-transparent to-transparent" />
+
+      <div className="lg:hidden">
+        <div className="absolute inset-0 -z-10 opacity-80">
+          <div className="h-[60vh] w-full bg-cover bg-center" style={{ backgroundImage: `url(${founderBackground})` }} />
         </div>
       </div>
     </div>
