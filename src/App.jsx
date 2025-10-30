@@ -488,12 +488,12 @@ function App() {
                   A side-by-side view of continuous hormone intelligence versus legacy lab workflows and emerging competitors.
                 </p>
               </div>
-              <div className="overflow-hidden rounded-3xl border border-brand-light bg-white shadow-sm">
-                <div className="grid grid-cols-4 bg-brand-dark text-white">
-                  <div className="px-6 py-4 text-sm font-semibold uppercase tracking-[0.3em] text-brand-light/70">Category</div>
-                  <div className="px-6 py-4 text-lg font-semibold">Rithm Patch</div>
-                  <div className="px-6 py-4 text-lg font-semibold">Blood Tests</div>
-                  <div className="px-6 py-4 text-lg font-semibold">Level Zero Health (LZH)</div>
+              <div className="comparison-table overflow-hidden rounded-3xl border border-brand-light bg-white shadow-sm">
+                <div className="comparison-table__header grid grid-cols-4 bg-brand-dark text-white">
+                  <div className="comparison-table__heading px-6 py-4 text-sm font-semibold uppercase tracking-[0.3em] text-brand-light/70">Category</div>
+                  <div className="comparison-table__heading px-6 py-4 text-lg font-semibold text-center">Rithm Patch</div>
+                  <div className="comparison-table__heading px-6 py-4 text-lg font-semibold text-center">Blood Tests</div>
+                  <div className="comparison-table__heading px-6 py-4 text-lg font-semibold text-center">Level Zero Health (LZH)</div>
                 </div>
                 {[
                   {
@@ -533,11 +533,19 @@ function App() {
                     lzh: 'Foundational UC patents.',
                   },
                 ].map((row) => (
-                  <div key={row.label} className="grid grid-cols-4 border-t border-brand-light/60">
-                    <div className="px-6 py-5 text-sm font-semibold uppercase tracking-wide text-brand-muted">{row.label}</div>
-                    <div className="px-6 py-5 text-sm text-brand-dark/80">{row.rithm}</div>
-                    <div className="px-6 py-5 text-sm text-brand-dark/80">{row.blood}</div>
-                    <div className="px-6 py-5 text-sm text-brand-dark/80">{row.lzh}</div>
+                  <div key={row.label} className="comparison-table__row grid grid-cols-4 border-t border-brand-light/60">
+                    <div className="comparison-table__cell comparison-table__label px-6 py-5 text-sm font-semibold uppercase tracking-wide text-brand-muted">
+                      {row.label}
+                    </div>
+                    <div className="comparison-table__cell px-6 py-5 text-sm text-brand-dark/80" data-label="Rithm Patch">
+                      {row.rithm}
+                    </div>
+                    <div className="comparison-table__cell px-6 py-5 text-sm text-brand-dark/80" data-label="Blood Tests">
+                      {row.blood}
+                    </div>
+                    <div className="comparison-table__cell px-6 py-5 text-sm text-brand-dark/80" data-label="Level Zero Health (LZH)">
+                      {row.lzh}
+                    </div>
                   </div>
                 ))}
               </div>
