@@ -1017,9 +1017,6 @@ function App() {
               </div>
             </div>
             <p className="w-full text-center text-xs text-brand-muted">
-              This concept site is for vision alignment. Replace this placeholder footer with legal information as content evolves.
-            </p>
-            <p className="w-full text-center text-xs text-brand-muted">
               DISCLAIMER: This site presents a conceptual vision for Pico Molecular. Performance claims, partnerships, advisory relationships, and testimonials are aspirational and represent development targets. Not FDA-approved. For private evaluation only.
             </p>
           </div>
