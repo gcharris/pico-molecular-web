@@ -570,37 +570,6 @@ function App() {
           </section>
 
           <section className="bg-white">
-            <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-              <div className="space-y-6">
-                <span className="inline-flex items-center rounded-full bg-brand-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">
-                  Inside the Patch
-                </span>
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Layered engineering for trustworthy biosignals.</h2>
-                <p className="text-brand-muted">
-                  The Rithm Patch marries soft biointerfaces with ruggedized electronics so clinicians can trust every microvolt. Each layer is designed to stabilize data integrity from skin contact to cloud analytics.
-                </p>
-                <ul className="space-y-4 text-sm text-brand-dark/80">
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                    <span><strong>Hydrogel microneedles:</strong> Self-sealing microcolumns draw interstitial fluid while anti-biofouling coatings preserve signal clarity.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                    <span><strong>EAB sensor disc:</strong> Nanocomposite aptamers convert hormone binding events into stable electrochemical signatures.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
-                    <span><strong>Wireless module:</strong> Ultra-low-power telemetry syncs encrypted packets to the Pico Molecular data mesh in real time.</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 p-6 shadow-lg">
-                <img src={patchExploded} alt="Exploded engineering view of the Rithm Patch" className="w-full object-contain" />
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-white">
             <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
               <div className="mb-10 max-w-4xl text-center">
                 <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Envisioned Impact.</h2>
@@ -754,6 +723,37 @@ function App() {
               </div>
               <div className="order-1 mb-10 overflow-hidden rounded-3xl border border-brand-light bg-white shadow-glow lg:order-2 lg:mb-0">
                 <img src={lifestyleVisual} alt="Person reviewing hormone insights from the Rithm Patch at home" className="w-full object-cover" />
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-white">
+            <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+              <div className="space-y-6">
+                <span className="inline-flex items-center rounded-full bg-brand-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">
+                  Inside the Patch
+                </span>
+                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Layered engineering for trustworthy biosignals.</h2>
+                <p className="text-brand-muted">
+                  The Rithm Patch marries soft biointerfaces with ruggedized electronics so clinicians can trust every microvolt. Each layer is designed to stabilize data integrity from skin contact to cloud analytics.
+                </p>
+                <ul className="space-y-4 text-sm text-brand-dark/80">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    <span><strong>Hydrogel microneedles:</strong> Self-sealing microcolumns draw interstitial fluid while anti-biofouling coatings preserve signal clarity.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    <span><strong>EAB sensor disc:</strong> Nanocomposite aptamers convert hormone binding events into stable electrochemical signatures.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-brand-primary" />
+                    <span><strong>Wireless module:</strong> Ultra-low-power telemetry syncs encrypted packets to the Pico Molecular data mesh in real time.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="overflow-hidden rounded-3xl border border-brand-light bg-brand-light/70 p-6 shadow-glow">
+                <img src={patchExploded} alt="Exploded engineering view of the Rithm Patch" className="w-full object-contain" />
               </div>
             </div>
           </section>
