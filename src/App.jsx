@@ -115,11 +115,27 @@ const platformTiles = [
   },
 ]
 
-const validations = [
-  'IRB-approved pilot cohorts across perimenopause, fertility preservation, and endocrine recovery programs.',
-  'Biosensor repeatability validated against serum benchmarks with ±6% variance in controlled environments.',
-  'Partnered with leading academic endocrine labs for longitudinal data sharing and assay refinement.',
-  'Roadmapped FDA Breakthrough Device designation; ISO 13485 manufacturing alignment in progress.',
+const validationMilestones = [
+  {
+    phase: '01',
+    title: 'ISF-Serum Correlation Study',
+    detail: 'Planned Q2 2026 — paired blood and interstitial fluid sampling to calibrate hormone translation.',
+  },
+  {
+    phase: '02',
+    title: 'Multi-Day Sensor Stability',
+    detail: 'Target: 5–7 days of continuous wear with drift <5% across dynamic lifestyle conditions.',
+  },
+  {
+    phase: '03',
+    title: 'Clinical Accuracy Validation',
+    detail: 'Goal: >95% correlation to gold-standard assays across IVF and endocrine cohorts.',
+  },
+  {
+    phase: '04',
+    title: 'FDA 510(k) Submission',
+    detail: 'Vision: File within 18–24 months post-seed to unlock commercial pilots.',
+  },
 ]
 
 const partnerHighlights = [
@@ -676,35 +692,42 @@ function App() {
             <div className="absolute inset-x-0 -top-10 mx-auto h-20 max-w-5xl rounded-full bg-gradient-to-r from-brand-primary/20 via-brand-glow/10 to-transparent blur-3xl" />
             <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-12">
               <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
-            <div>
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Clinically confident, regulation forward.</h2>
+                <div>
+                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Validation Roadmap: Target Milestones</h2>
                   <p className="mt-4 text-brand-muted">
-                    Built with scientists, clinicians, and regulators to meet rigorous performance standards from day one.
+                    A forward-looking plan that outlines how Pico Molecular could prove safety, reliability, and regulatory readiness once prototypes are mature.
                   </p>
-                  <ul className="mt-8 space-y-4 text-sm text-brand-dark/80">
-                    {validations.map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-primary/15 text-xs font-semibold text-brand-primary">
-                          ✓
-                        </span>
-                        <span>{item}</span>
-                      </li>
+                  <div className="validation-roadmap mt-10">
+                    {validationMilestones.map((milestone, index) => (
+                      <div key={milestone.title} className="validation-step">
+                        <div className="validation-step__marker">
+                          <span>✓</span>
+                        </div>
+                        <div className="validation-step__body">
+                          <p className="validation-step__title">{milestone.title}</p>
+                          <p className="validation-step__detail">{milestone.detail}</p>
+                        </div>
+                        {index !== validationMilestones.length - 1 ? <div className="validation-step__connector" aria-hidden="true" /> : null}
+                      </div>
                     ))}
-                  </ul>
+                  </div>
+                  <p className="mt-8 text-[13px] italic text-brand-muted/80">
+                    *All milestones are targets and desired outcomes; not completed validations. Timeline subject to change pending development and funding.*
+                  </p>
                 </div>
                 <aside className="rounded-3xl border border-brand-light bg-white p-8 shadow-lg">
-                  <h3 className="font-display text-2xl text-brand-dark">Program Blueprint</h3>
+                  <h3 className="font-display text-2xl text-brand-dark">Program Blueprint Canvas</h3>
                   <p className="mt-4 text-sm text-brand-muted">
-                    Use this module to preview onboarding timelines, pilot study design, or regulatory milestones. Swap in your own visuals or infographics as they become available.
+                    Use this working canvas to sketch the experiments, capital triggers, and advisor inputs needed to unlock each milestone as the roadmap progresses.
                   </p>
                   <div className="mt-6 space-y-4 text-sm text-brand-dark/70">
                     <div className="rounded-2xl border border-brand-primary/20 bg-brand-light/60 p-4">
-                      <p className="text-xs uppercase tracking-wide text-brand-muted">Milestone Snapshot</p>
-                      <p className="mt-2 font-semibold">Q4 • Breakthrough Device submission ready</p>
+                      <p className="text-xs uppercase tracking-wide text-brand-muted">Next Target</p>
+                      <p className="mt-2 font-semibold">Correlation protocol drafted with partner lab post hardware beta</p>
                     </div>
                     <div className="rounded-2xl border border-brand-primary/20 bg-brand-light/60 p-4">
-                      <p className="text-xs uppercase tracking-wide text-brand-muted">Pilot Highlight</p>
-                      <p className="mt-2 font-semibold">120 participants across three care sites</p>
+                      <p className="text-xs uppercase tracking-wide text-brand-muted">Capital Trigger</p>
+                      <p className="mt-2 font-semibold">FDA pre-sub outreach planned once seed round closes</p>
                     </div>
                   </div>
                 </aside>
