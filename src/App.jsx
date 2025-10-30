@@ -512,74 +512,6 @@ function App() {
             </div>
           </section>
 
-          <section className="bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-                <div className="space-y-6">
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Founder</h2>
-                  <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                    <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                      <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl">
-                        <img src={teamPortrait} alt="Pico Molecular founding team" className="h-full w-full object-cover" />
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-glow/20" />
-                      </div>
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Founder &amp; CEO</p>
-                        <h3 className="mt-2 font-display text-3xl text-brand-dark">Alexandra Chen, PhD</h3>
-                        <p className="mt-3 text-sm text-brand-muted">
-                          Synthetic biologist and medical device engineer with a decade of experience translating biosensor IP into FDA-cleared products. Previously led biosignal R&amp;D at leading CGM and fertility-tech companies.
-                        </p>
-                        <p className="mt-4 text-xs text-brand-muted">
-                          Placeholder biography and photo — swap in official headshot and credential highlights.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-6">
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Scientific Advisors</h2>
-                  <p className="text-sm text-brand-muted">
-                    A multidisciplinary advisory board spanning reproductive endocrinology, biosensors, and AI safety.
-                  </p>
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {[
-                      { name: 'Dr. Priya Natarajan', detail: 'Reproductive Endocrinologist, Stanford Medicine', asset: '/photos/advisor-natarajan-placeholder.jpg' },
-                      { name: 'Prof. Miguel Ortega', detail: 'Nanomaterials Lab, MIT', asset: '/photos/advisor-ortega-placeholder.jpg' },
-                      { name: 'Dr. Hannah Liu', detail: 'Former FDA Digital Health Reviewer', asset: '/photos/advisor-liu-placeholder.jpg' },
-                      { name: 'Prof. Julian Smith', detail: 'AI Assurance Lead, Oxford', asset: '/photos/advisor-smith-placeholder.jpg' },
-                    ].map((advisor) => (
-                      <div key={advisor.name} className="rounded-3xl border border-brand-light bg-brand-light/50 p-5 shadow-sm">
-                        <div
-                          className="h-20 w-full overflow-hidden rounded-2xl bg-cover bg-center"
-                          style={{ backgroundImage: `url(${advisor.asset})` }}
-                        />
-                        <h3 className="mt-4 font-display text-xl text-brand-dark">{advisor.name}</h3>
-                        <p className="mt-2 text-xs text-brand-muted">{advisor.detail}</p>
-                        <p className="mt-3 text-[11px] text-brand-muted">Replace with official portraits or partner logos.</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="mt-16 grid gap-8 sm:grid-cols-2">
-                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Vision</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Continuous molecular intelligence for every body.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    Pico Molecular envisions a world where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
-                  </p>
-                </div>
-                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Mission</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Translate hormone signals into better outcomes.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    We engineer wearable biosensors and AI biomarkers that empower patients, equip clinicians, and unlock new standards of women’s health delivery.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
           <section className="bg-brand-light/70 mt-8">
             <div className="mx-auto max-w-6xl px-6 py-16 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-12">
               <div className="order-2 space-y-6 lg:order-1">
@@ -756,6 +688,74 @@ function App() {
           </div>
         </div>
       </section>
+
+          <section className="bg-white">
+            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
+              <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+                <div className="space-y-6">
+                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Founder</h2>
+                  <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
+                    <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
+                      <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl">
+                        <img src={teamPortrait} alt="Pico Molecular founding team" className="h-full w-full object-cover" />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-glow/20" />
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Founder &amp; CEO</p>
+                        <h3 className="mt-2 font-display text-3xl text-brand-dark">Alexandra Chen, PhD</h3>
+                        <p className="mt-3 text-sm text-brand-muted">
+                          Synthetic biologist and medical device engineer with a decade of experience translating biosensor IP into FDA-cleared products. Previously led biosignal R&amp;D at leading CGM and fertility-tech companies.
+                        </p>
+                        <p className="mt-4 text-xs text-brand-muted">
+                          Placeholder biography and photo — swap in official headshot and credential highlights.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-6">
+                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Scientific Advisors</h2>
+                  <p className="text-sm text-brand-muted">
+                    A multidisciplinary advisory board spanning reproductive endocrinology, biosensors, and AI safety.
+                  </p>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {[
+                      { name: 'Dr. Priya Natarajan', detail: 'Reproductive Endocrinologist, Stanford Medicine', asset: '/photos/advisor-natarajan-placeholder.jpg' },
+                      { name: 'Prof. Miguel Ortega', detail: 'Nanomaterials Lab, MIT', asset: '/photos/advisor-ortega-placeholder.jpg' },
+                      { name: 'Dr. Hannah Liu', detail: 'Former FDA Digital Health Reviewer', asset: '/photos/advisor-liu-placeholder.jpg' },
+                      { name: 'Prof. Julian Smith', detail: 'AI Assurance Lead, Oxford', asset: '/photos/advisor-smith-placeholder.jpg' },
+                    ].map((advisor) => (
+                      <div key={advisor.name} className="rounded-3xl border border-brand-light bg-brand-light/50 p-5 shadow-sm">
+                        <div
+                          className="h-20 w-full overflow-hidden rounded-2xl bg-cover bg-center"
+                          style={{ backgroundImage: `url(${advisor.asset})` }}
+                        />
+                        <h3 className="mt-4 font-display text-xl text-brand-dark">{advisor.name}</h3>
+                        <p className="mt-2 text-xs text-brand-muted">{advisor.detail}</p>
+                        <p className="mt-3 text-[11px] text-brand-muted">Replace with official portraits or partner logos.</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="mt-16 grid gap-8 sm:grid-cols-2">
+                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Vision</p>
+                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Continuous molecular intelligence for every body.</h3>
+                  <p className="mt-4 text-sm text-brand-muted">
+                    Pico Molecular envisions a world where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
+                  </p>
+                </div>
+                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Mission</p>
+                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Translate hormone signals into better outcomes.</h3>
+                  <p className="mt-4 text-sm text-brand-muted">
+                    We engineer wearable biosensors and AI biomarkers that empower patients, equip clinicians, and unlock new standards of women’s health delivery.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section id="contact" className="relative overflow-hidden bg-brand-dark text-white">
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/20 via-transparent to-brand-glow/20" />
