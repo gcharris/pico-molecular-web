@@ -794,55 +794,15 @@ a {
  }
  
  .step-card {
-   background: rgba(255, 255, 255, 0.78);
+  background: #ffffff;
    border-radius: 12px;
    padding: clamp(1.75rem, 2.5vw, 2rem) clamp(1.45rem, 2.3vw, 1.85rem) clamp(1.45rem, 2.1vw, 1.75rem) clamp(1.45rem, 2.3vw, 1.85rem);
-   box-shadow: 0 12px 32px -24px rgba(15, 23, 42, 0.2);
+   box-shadow: 0 12px 32px -24px rgba(15, 23, 42, 0.18);
    display: flex;
    flex-direction: column;
    gap: 0.75rem;
    width: 100%;
    min-height: 300px;
-   transition: transform 0.25s ease, box-shadow 0.25s ease;
- }
- 
- .step-card::before {
-   content: '';
-   position: absolute;
-   inset: 0;
-   opacity: 0.1;
- }
- 
- .step-card:hover {
-   transform: translateY(-6px);
-   box-shadow: 0 28px 55px -25px rgba(15, 23, 42, 0.28);
- }
- 
- .step-gradient-1::before {
-   background: linear-gradient(135deg, #3b82f6, #14b8a6);
- }
- 
- .step-gradient-2::before {
-   background: linear-gradient(135deg, #8b5cf6, #3b82f6);
- }
- 
- .step-gradient-3::before {
-   background: linear-gradient(135deg, #10b981, #14b8a6);
- }
- 
- .step-number {
-   width: 36px;
-   height: 36px;
-   border-radius: 50%;
-   background: linear-gradient(135deg, #3b82f6, #0ea5e9);
-   color: #fff;
-   font-size: 1rem;
-   font-weight: 600;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 16px;
-   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
  }
  
  .step-icon {
@@ -874,7 +834,7 @@ a {
    align-items: center;
    justify-content: center;
    font-size: 1.75rem;
-   color: rgba(15, 23, 42, 0.25);
+   color: rgba(15, 23, 42, 0.2);
    flex: 0 0 auto;
    margin-top: clamp(3.5rem, 8vw, 4.5rem);
  }
