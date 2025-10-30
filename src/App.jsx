@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import './App.css'
 import picoIcon from '../photos/pico-logo-icon.png'
 import heroImage from '../photos/hero-patch-model.png'
@@ -16,6 +16,7 @@ import rithmLogoMark from '../photos/rithm-logo-mark-transparent.png'
 import rithmWord from '../photos/rithm-word-transparent.png'
 import SplashGate from './components/SplashGate'
 import clinicalImpactScene from '../photos/4. Clinical Impact Scene.png'
+import React from 'react'
 
 const ACCESS_KEY = 'pico-vision-access'
 
@@ -227,6 +228,84 @@ const featureHighlights = [
   },
 ]
 
+const createWearIcon = (id) => (
+  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="6" y="20" width="52" height="24" rx="12" stroke={`url(#${id}-patchStroke)`} strokeWidth="3" fill="rgba(255,255,255,0.25)" />
+    <rect x="20" y="26" width="24" height="12" rx="6" fill={`url(#${id}-patchFill)`} />
+    <defs>
+      <linearGradient id={`${id}-patchStroke`} x1="6" y1="20" x2="58" y2="44" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#3b82f6" />
+        <stop offset="1" stopColor="#14b8a6" />
+      </linearGradient>
+      <linearGradient id={`${id}-patchFill`} x1="20" y1="26" x2="44" y2="38" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#e0f2fe" />
+        <stop offset="1" stopColor="#cffafe" />
+      </linearGradient>
+    </defs>
+  </svg>
+)
+
+const createConnectIcon = (id) => (
+  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="32" r="14" fill={`url(#${id}-connectCircle)`} opacity="0.4" />
+    <rect x="32" y="20" width="20" height="28" rx="6" stroke={`url(#${id}-connectStroke)`} strokeWidth="3" />
+    <path d="M40 28H44" stroke={`url(#${id}-connectStroke)`} strokeWidth="3" strokeLinecap="round" />
+    <path d="M40 36H48" stroke={`url(#${id}-connectStroke)`} strokeWidth="3" strokeLinecap="round" />
+    <defs>
+      <linearGradient id={`${id}-connectStroke`} x1="32" y1="20" x2="52" y2="48" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#8b5cf6" />
+        <stop offset="1" stopColor="#3b82f6" />
+      </linearGradient>
+      <linearGradient id={`${id}-connectCircle`} x1="10" y1="18" x2="34" y2="44" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#ede9fe" />
+        <stop offset="1" stopColor="#dbeafe" />
+      </linearGradient>
+    </defs>
+  </svg>
+)
+
+const createKnowIcon = (id) => (
+  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M26 24C26 20.6863 28.6863 18 32 18C35.3137 18 38 20.6863 38 24C38 26.0214 37.0529 27.8486 35.5387 29" stroke={`url(#${id}-knowStroke)`} strokeWidth="3" strokeLinecap="round" />
+    <path d="M22 44C22 38.4772 26.4772 34 32 34C37.5228 34 42 38.4772 42 44" stroke={`url(#${id}-knowStroke)`} strokeWidth="3" strokeLinecap="round" />
+    <rect x="16" y="44" width="32" height="6" rx="3" fill={`url(#${id}-knowFill)`} />
+    <defs>
+      <linearGradient id={`${id}-knowStroke`} x1="22" y1="18" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#10b981" />
+        <stop offset="1" stopColor="#14b8a6" />
+      </linearGradient>
+      <linearGradient id={`${id}-knowFill`} x1="16" y1="44" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#dcfce7" />
+        <stop offset="1" stopColor="#ccfbf1" />
+      </linearGradient>
+    </defs>
+  </svg>
+)
+
+const steps = [
+  {
+    id: 1,
+    title: 'Wear',
+    description: 'Apply the skin-friendly patch—microneedles establish gentle, stable biofluid access in minutes.',
+    gradientClass: 'step-gradient-1',
+    icon: createWearIcon('wear-icon-1'),
+  },
+  {
+    id: 2,
+    title: 'Connect',
+    description: 'Edge electronics encrypt and stream data to the app, while cloud intelligence harmonizes and calibrates signals.',
+    gradientClass: 'step-gradient-2',
+    icon: createConnectIcon('connect-icon-2'),
+  },
+  {
+    id: 3,
+    title: 'Know',
+    description: 'Models translate hormone rhythms into insights, forecasts, and workflows clinicians and members can act on immediately.',
+    gradientClass: 'step-gradient-3',
+    icon: createKnowIcon('know-icon-3'),
+  },
+]
+
 function App() {
   const [isAuthorized, setIsAuthorized] = useState(false)
 
@@ -389,39 +468,32 @@ function App() {
             </div>
           </section>
 
-          <section className="bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="mb-10 max-w-3xl text-center">
-                <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">From wear to wisdom in three clicks.</h2>
-                <p className="mt-4 text-brand-muted">
-                  Microneedle arrays, electrochemical EAB sensors, and AI biomarker engines work together to transform surface-level sampling into clinically meaningful hormone intelligence.
-                </p>
-              </div>
-              <div className="grid gap-8 md:grid-cols-3">
-                {[
-                  {
-                    step: '1',
-                    title: 'Wear',
-                    description: 'User applies the skin-friendly patch—microneedles painlessly access interstitial fluid in minutes.',
-                  },
-                  {
-                    step: '2',
-                    title: 'Connect',
-                    description: 'Electrochemical aptamer-based sensors capture hormonal signals and stream encrypted data to the secure app.',
-                  },
-                  {
-                    step: '3',
-                    title: 'Know',
-                    description: 'Edge + cloud AI translates biomarkers into daily, actionable analytics for members and care teams.',
-                  },
-                ].map((item) => (
-                  <div key={item.step} className="relative rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                    <span className="absolute -top-5 left-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary text-sm font-semibold text-white shadow-lg">
-                      {item.step}
-                    </span>
-                    <h3 className="mt-8 font-display text-2xl text-brand-dark">{item.title}</h3>
-                    <p className="mt-4 text-sm text-brand-muted">{item.description}</p>
-                  </div>
+          <section className="three-clicks-section bg-white">
+             <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
+               <div className="mb-10 max-w-3xl text-center">
+                 <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">From wear to wisdom in three clicks.</h2>
+                 <p className="mt-4 text-brand-muted">
+                   Microneedle arrays, electrochemical EAB sensors, and AI biomarker engines work together to transform surface-level sampling into clinically meaningful hormone intelligence.
+                 </p>
+               </div>
+              <div className="steps-flow">
+                {steps.map((step, index) => (
+                  <Fragment key={step.id}>
+                    <div className={`step-card ${step.gradientClass}`}>
+                      <div className="step-number">{step.id}</div>
+                      <div className="step-icon" aria-hidden="true">
+                        {step.icon}
+                      </div>
+                      <h3 className="step-title">{step.title}</h3>
+                      <p className="step-description">{step.description}</p>
+                    </div>
+                    {index < steps.length - 1 ? (
+                      <div className="step-arrow" aria-hidden="true">
+                        <span className="step-arrow__desktop">→</span>
+                        <span className="step-arrow__mobile">↓</span>
+                      </div>
+                    ) : null}
+                  </Fragment>
                 ))}
               </div>
             </div>
