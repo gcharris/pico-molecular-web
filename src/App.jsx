@@ -826,19 +826,21 @@ function App() {
               </div>
 
               <div className="mission-grid">
-                <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Vision</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Continuous molecular intelligence for every body.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    Pico Molecular envisions a world where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
+                <div className="mission-card mission-card--vision">
+                  <p className="mission-card__overline">Vision · Our North Star</p>
+                  <h3 className="mission-card__title">Continuous molecular intelligence for every body.</h3>
+                  <p className="mission-card__text">
+                    Pico Molecular envisions a future where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
                   </p>
+                  <p className="mission-card__note">*This vision represents our long-term goal and the impact we aspire to create.*</p>
                 </div>
-                <div className="rounded-3xl border border-brand-light bg-white p-8 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Mission</p>
-                  <h3 className="mt-4 font-display text-2xl text-brand-dark">Translate hormone signals into better outcomes.</h3>
-                  <p className="mt-4 text-sm text-brand-muted">
-                    We engineer wearable biosensors and AI biomarkers that empower patients, equip clinicians, and unlock new standards of women’s health delivery.
+                <div className="mission-card mission-card--mission">
+                  <p className="mission-card__overline">Mission · What We&apos;re Building</p>
+                  <h3 className="mission-card__title">Translate hormone signals into better outcomes.</h3>
+                  <p className="mission-card__text">
+                    We are developing wearable biosensors and AI biomarkers that aim to empower patients, equip clinicians, and unlock new standards of women’s health delivery as validation milestones are achieved.
                   </p>
+                  <p className="mission-card__note">*Our mission defines the path forward; execution is underway and subject to validation and development milestones.*</p>
                 </div>
               </div>
             </div>
