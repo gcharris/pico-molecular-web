@@ -857,3 +857,94 @@ a {
  .step-arrow__mobile {
    display: none;
  }
+
+.ip-strategy-section {
+  background: #f8fafc;
+}
+
+.ip-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+@media (max-width: 1023px) {
+  .ip-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ip-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 18px 55px -32px rgba(15, 23, 42, 0.1);
+  padding: clamp(2rem, 3vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ip-card__icon {
+  font-size: 2.25rem;
+}
+
+.ip-card__title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.65rem);
+  color: #0f172a;
+  line-height: 1.25;
+}
+
+.ip-card__list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ip-card__list li {
+  display: grid;
+  gap: 0.25rem;
+  color: rgba(15, 23, 42, 0.72);
+  font-size: 0.95rem;
+}
+
+.ip-card__list li strong {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.ip-card__status {
+  font-size: 0.9rem;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.freedom-to-operate-box {
+  margin-top: clamp(2.5rem, 6vw, 3.5rem);
+  background: linear-gradient(120deg, rgba(37, 99, 235, 0.06), rgba(13, 148, 136, 0.08));
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: 16px;
+  padding: clamp(2rem, 3vw, 2.5rem);
+}
+
+.freedom-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.35rem, 2.1vw, 1.55rem);
+  margin-bottom: 1rem;
+}
+
+.freedom-detail {
+  font-size: 0.95rem;
+  color: rgba(15, 23, 42, 0.72);
+  margin-bottom: 0.6rem;
+}
+
+.ip-disclaimer {
+  margin-top: clamp(2rem, 5vw, 2.75rem);
+  font-size: 0.8rem;
+  color: rgba(15, 23, 42, 0.6);
+  text-align: center;
+}

@@ -308,6 +308,36 @@ const steps = [
   },
 ]
 
+const ipLayers = [
+  {
+    title: 'IP Layer 1: Bio-Interface Innovation',
+    icon: '🔬',
+    bullets: [
+      { heading: 'Composition of Matter Patent', detail: 'Novel anti-biofouling hydrogel formulation' },
+      { heading: 'Method Patent', detail: 'Microneedle fabrication and integration process' },
+    ],
+    status: 'Status: Provisional filing targeted Q1 2026',
+  },
+  {
+    title: 'IP Layer 2: Sensing Engine',
+    icon: '⚡',
+    bullets: [
+      { heading: 'Device Patent', detail: 'Nanocomposite electrode architecture (MXene/graphene)' },
+      { heading: 'Method Patent', detail: 'Aptamer-based signal amplification mechanism' },
+    ],
+    status: 'Status: Research validation in progress',
+  },
+  {
+    title: 'IP Layer 3: Data Intelligence',
+    icon: '🧠',
+    bullets: [
+      { heading: 'Method Patent', detail: 'Proprietary digital biomarker algorithms' },
+      { heading: 'Software Patent', detail: 'Predictive hormone analytics engine' },
+    ],
+    status: 'Status: Algorithm development underway',
+  },
+]
+
 function App() {
   const [isAuthorized, setIsAuthorized] = useState(false)
 
@@ -924,6 +954,43 @@ function App() {
                 </p>
               </div>
 
+            </div>
+          </section>
+
+          <section id="ip-strategy" className="ip-strategy-section bg-white">
+            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
+              <div className="mb-12 text-center">
+                <h2 className="section-title font-display text-4xl text-brand-dark sm:text-5xl">Building the Moat: Our Three-Layer IP Strategy</h2>
+                <p className="section-subtitle text-brand-muted">
+                  Intellectual property isn&apos;t just protection—it&apos;s competitive advantage. Our patent strategy creates a defensible moat from the bio-interface to the AI layer.
+                </p>
+              </div>
+              <div className="ip-cards-container">
+                {ipLayers.map((layer) => (
+                  <div key={layer.title} className="ip-card">
+                    <span className="ip-card__icon" aria-hidden="true">{layer.icon}</span>
+                    <h3 className="ip-card__title">{layer.title}</h3>
+                    <ul className="ip-card__list">
+                      {layer.bullets.map((item) => (
+                        <li key={item.heading}>
+                          <strong>{item.heading}</strong>
+                          <span>{item.detail}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="ip-card__status">{layer.status}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="freedom-to-operate-box">
+                <h3 className="freedom-title">Freedom to Operate Strategy</h3>
+                <p className="freedom-detail"><strong>Target License:</strong> University of Cincinnati foundational EAB sensor patents</p>
+                <p className="freedom-detail"><strong>Strategy:</strong> Transform IP risk into competitive advantage through strategic licensing</p>
+                <p className="freedom-detail"><strong>Timeline:</strong> Negotiations to commence post-seed funding</p>
+              </div>
+              <p className="ip-disclaimer">
+                *Patent filings are in development. Provisional filing targets and timelines are estimates subject to research progress and funding.
+              </p>
             </div>
           </section>
 
