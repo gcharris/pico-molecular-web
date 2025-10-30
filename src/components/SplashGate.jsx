@@ -25,20 +25,20 @@ function SplashGate({ onSuccess, logoSrc }) {
     <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#f8e6da] via-[#fff2eb] to-[#fff8f2]">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(248,204,178,0.28),transparent_55%)]" />
 
-      <div className="relative mx-auto flex min-h-screen w-full max-w-[1400px] flex-col items-center justify-center gap-10 px-6 py-12 sm:px-10 lg:flex-row lg:gap-20">
+      <div className="relative mx-auto flex min-h-screen w-full max-w-[1400px] flex-col items-center justify-center gap-10 px-6 py-12 sm:px-10 lg:flex-row lg:items-stretch lg:gap-20">
         <div className="flex w-full items-stretch justify-center lg:w-[45%]">
-          <div className="relative flex h-full w-full max-w-[540px] items-center justify-center overflow-hidden rounded-[20px] bg-white shadow-[0_34px_95px_rgba(190,158,130,0.28)]">
+          <div className="relative flex h-full w-full max-w-[540px] items-center justify-center overflow-hidden rounded-[20px] bg-white shadow-[0_34px_95px_rgba(190,158,130,0.28)] lg:h-[82vh]">
             <img
               src={founderBackground}
               alt="Founder portrait"
               className="pointer-events-none h-full max-h-[78vh] w-full select-none object-cover"
-              style={{ filter: 'none', objectPosition: 'center 40%' }}
+              style={{ filter: 'contrast(1.05) saturate(1.04)', objectPosition: 'center 40%' }}
             />
           </div>
         </div>
 
         <div className="flex w-full items-stretch justify-center lg:w-[55%]">
-          <div className="flex h-full w-full max-w-[520px] flex-col justify-between rounded-[20px] bg-[rgba(80,74,58,0.88)] px-12 py-14 text-white shadow-[0_28px_85px_rgba(80,74,58,0.32)] backdrop-blur">
+          <div className="flex h-full w-full max-w-[520px] flex-col justify-between rounded-[20px] bg-[rgba(80,74,58,0.88)] px-12 py-14 text-white shadow-[0_28px_85px_rgba(80,74,58,0.32)] backdrop-blur lg:h-[82vh]">
             <div>
               <div className="flex flex-col items-center text-center">
                 <img src={logoSrc} alt="Pico Molecular logo" className="mb-6 h-auto w-[80px]" />
