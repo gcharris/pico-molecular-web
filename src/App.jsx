@@ -302,6 +302,7 @@ function App() {
           </section>
 
           <section className="mission-vision-hero" style={{ backgroundImage: `url(${clinicalImpactScene})` }}>
+            <div className="mission-vision-bg" aria-hidden="true" />
             <div className="mission-vision-container">
               <div className="mission-vision-grid">
                 <div className="mission-vision-card mission-vision-card--mission">
