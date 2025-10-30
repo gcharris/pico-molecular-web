@@ -288,21 +288,21 @@ const steps = [
     title: 'Wear',
     description: 'Apply the skin-friendly patch—microneedles establish gentle, stable biofluid access in minutes.',
     gradientClass: 'step-gradient-1',
-    icon: createWearIcon('wear-icon-1'),
+    icon: createWearIcon('wear-icon'),
   },
   {
     id: 2,
     title: 'Connect',
     description: 'Edge electronics encrypt and stream data to the app, while cloud intelligence harmonizes and calibrates signals.',
     gradientClass: 'step-gradient-2',
-    icon: createConnectIcon('connect-icon-2'),
+    icon: createConnectIcon('connect-icon'),
   },
   {
     id: 3,
     title: 'Know',
     description: 'Models translate hormone rhythms into insights, forecasts, and workflows clinicians and members can act on immediately.',
     gradientClass: 'step-gradient-3',
-    icon: createKnowIcon('know-icon-3'),
+    icon: createKnowIcon('know-icon'),
   },
 ]
 
