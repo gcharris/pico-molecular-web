@@ -1014,8 +1014,14 @@ function App() {
               <a href="#security" className="hover:text-brand-primary">Security</a>
               <a href="#press" className="hover:text-brand-primary">Press Kit</a>
             </div>
-        </div>
-      </footer>
+            <div className="mt-6 text-sm text-brand-light/60">
+               This concept site is for vision alignment. Replace this placeholder footer with legal information as content evolves.
+             </div>
+             <p className="mt-4 text-xs text-brand-light/50">
+               DISCLAIMER: This site presents a conceptual vision for Pico Molecular. Performance claims, partnerships, advisory relationships, and testimonials are aspirational and represent development targets. Not FDA-approved. For private evaluation only.
+             </p>
+          </div>
+        </footer>
       </div>
     </div>
   )
