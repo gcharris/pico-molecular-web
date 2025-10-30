@@ -397,7 +397,7 @@ a {
 
 .advisor-section {
   margin-top: 4.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .advisor-section__heading {
@@ -411,8 +411,6 @@ a {
   color: rgba(15, 23, 42, 0.65);
   font-size: 1rem;
   max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mission-grid {

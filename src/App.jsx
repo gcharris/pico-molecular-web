@@ -174,6 +174,10 @@ const advisorExpertise = [
     label: 'Obstetrics, Gynecology, and Women’s Wellness',
     description: 'Ensuring the product experience supports whole-person care, clinician workflow fit, and inclusive access.',
   },
+  {
+    label: 'Clinical Trials & Study Design',
+    description: 'Leading protocols for multi-site validation, recruitment, and longitudinal data collection to support regulatory submissions.',
+  },
 ]
 
 const stats = [
