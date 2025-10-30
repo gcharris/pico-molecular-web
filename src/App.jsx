@@ -691,8 +691,8 @@ function App() {
           <section id="validation" className="relative bg-brand-light/60">
             <div className="absolute inset-x-0 -top-10 mx-auto h-20 max-w-5xl rounded-full bg-gradient-to-r from-brand-primary/20 via-brand-glow/10 to-transparent blur-3xl" />
             <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-12">
-              <div className="validation-columns grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
-                <div>
+              <div className="validation-columns">
+                <div className="validation-column validation-column--roadmap">
                   <h2 className="validation-roadmap__heading font-display text-4xl text-brand-dark sm:text-5xl">Validation Roadmap: Target Milestones</h2>
                   <p className="mt-4 text-brand-muted">
                     A forward-looking plan that outlines how Pico Molecular could prove safety, reliability, and regulatory readiness once prototypes are mature.
@@ -715,19 +715,19 @@ function App() {
                     *All milestones are targets and desired outcomes; not completed validations. Timeline subject to change pending development and funding.*
                   </p>
                 </div>
-                <aside className="rounded-3xl border border-brand-light bg-white p-8 shadow-lg">
+                <aside className="validation-column validation-column--blueprint rounded-3xl border border-brand-light bg-white p-8 shadow-lg">
                   <h3 className="font-display text-2xl text-brand-dark">Program Blueprint Canvas</h3>
                   <p className="mt-4 text-sm text-brand-muted">
-                    Use this working canvas to sketch the experiments, capital triggers, and advisor inputs needed to unlock each milestone as the roadmap progresses.
+                    Our internal roadmap canvas tracks key experiments, capital triggers, and strategic inputs needed to unlock each validation milestone as we progress toward clinical readiness.
                   </p>
                   <div className="mt-6 space-y-4 text-sm text-brand-dark/70">
                     <div className="rounded-2xl border border-brand-primary/20 bg-brand-light/60 p-4">
                       <p className="text-xs uppercase tracking-wide text-brand-muted">Next Target</p>
-                      <p className="mt-2 font-semibold">Correlation protocol drafted with partner lab post hardware beta</p>
+                      <p className="mt-2 font-semibold">ISF-Serum Correlation Protocol (Partner Lab TBD, Post Hardware Beta)</p>
                     </div>
                     <div className="rounded-2xl border border-brand-primary/20 bg-brand-light/60 p-4">
                       <p className="text-xs uppercase tracking-wide text-brand-muted">Capital Trigger</p>
-                      <p className="mt-2 font-semibold">FDA pre-sub outreach planned once seed round closes</p>
+                      <p className="mt-2 font-semibold">FDA Pre-Sub Outreach (Target: Post Seed Round Close)</p>
                     </div>
                   </div>
                 </aside>

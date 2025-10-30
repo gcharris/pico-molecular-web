@@ -217,11 +217,34 @@ a {
 }
 
 .validation-columns {
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.validation-column {
+  width: 100%;
 }
 
 .validation-roadmap__heading {
   margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .validation-columns {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .validation-column--roadmap {
+    flex: 1.2;
+  }
+
+  .validation-column--blueprint {
+    flex: 0.9;
+  }
 }
 
 .feature-card {
