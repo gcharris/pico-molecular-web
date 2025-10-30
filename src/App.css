@@ -23,6 +23,7 @@ a {
 .hero-section {
   background: linear-gradient(180deg, #f4f6ff 0%, #ffffff 100%);
   color: #0f172a;
+  margin-bottom: 5rem;
 }
 
 .hero-section .hero-photo-bg {
@@ -413,6 +414,11 @@ a {
   max-width: 720px;
 }
 
+.mission-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  margin: 5rem 0;
+}
+
 .mission-grid {
   margin-top: 4rem;
   display: grid;
@@ -470,6 +476,11 @@ a {
   font-size: 0.82rem;
   color: rgba(100, 116, 139, 0.85);
   font-style: italic;
+}
+
+.product-section {
+  margin-top: 5rem;
+  background: #ffffff;
 }
 
 .feature-card {

@@ -288,7 +288,7 @@ function App() {
                 backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(250,252,255,0.95) 50%, rgba(248,250,252,0.94) 100%), url(${heroBackdrop})`,
               }}
             />
-            <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 pt-20 pb-36 text-brand-dark lg:px-12 lg:pt-28 lg:pb-48">
+            <div className="relative mx-auto flex max-w-7xl flex-col gap-12 px-6 pt-20 pb-24 text-brand-dark lg:px-12 lg:pt-28 lg:pb-32">
               <div className="hero-brand">
                 <img src={rithmLogoMark} alt="Rithm circular logo" className="hero-brand-mark" />
                 <img src={rithmWord} alt="Rithm wordmark" className="hero-brand-word" />
@@ -297,8 +297,35 @@ function App() {
                   Continuous hormone intelligence you can wear. The flagship modality of Pico Molecular delivers clinical-grade endocrine visibility without daily lab work.
                 </p>
               </div>
+            </div>
+          </section>
 
-              <div className="mt-8 flex flex-col gap-12 lg:mt-12 lg:flex-row lg:items-start">
+          <section className="mission-section bg-white">
+            <div className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
+              <div className="mission-grid">
+                <div className="mission-card mission-card--vision">
+                  <p className="mission-card__overline">Vision · Our North Star</p>
+                  <h3 className="mission-card__title">Continuous molecular intelligence for every body.</h3>
+                  <p className="mission-card__text">
+                    Pico Molecular envisions a future where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
+                  </p>
+                  <p className="mission-card__note">*This vision represents our long-term goal and the impact we aspire to create.*</p>
+                </div>
+                <div className="mission-card mission-card--mission">
+                  <p className="mission-card__overline">Mission · What We&apos;re Building</p>
+                  <h3 className="mission-card__title">Translate hormone signals into better outcomes.</h3>
+                  <p className="mission-card__text">
+                    We are developing wearable biosensors and AI biomarkers that aim to empower patients, equip clinicians, and unlock new standards of women’s health delivery as validation milestones are achieved.
+                  </p>
+                  <p className="mission-card__note">*Our mission defines the path forward; execution is underway and subject to validation and development milestones.*</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="product" className="product-section bg-white">
+            <div className="mx-auto max-w-7xl px-6 py-16 text-brand-dark lg:px-12 lg:py-20">
+              <div className="mt-0 flex flex-col gap-12 lg:flex-row lg:items-start">
                 <div className="order-2 flex-1 space-y-8 lg:order-1">
                   <span className="hero-pill inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold">
                     Next-Gen Hormone Biosensing
@@ -332,29 +359,6 @@ function App() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="mission-section bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
-              <div className="mission-grid">
-                <div className="mission-card mission-card--vision">
-                  <p className="mission-card__overline">Vision · Our North Star</p>
-                  <h3 className="mission-card__title">Continuous molecular intelligence for every body.</h3>
-                  <p className="mission-card__text">
-                    Pico Molecular envisions a future where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
-                  </p>
-                  <p className="mission-card__note">*This vision represents our long-term goal and the impact we aspire to create.*</p>
-                </div>
-                <div className="mission-card mission-card--mission">
-                  <p className="mission-card__overline">Mission · What We&apos;re Building</p>
-                  <h3 className="mission-card__title">Translate hormone signals into better outcomes.</h3>
-                  <p className="mission-card__text">
-                    We are developing wearable biosensors and AI biomarkers that aim to empower patients, equip clinicians, and unlock new standards of women’s health delivery as validation milestones are achieved.
-                  </p>
-                  <p className="mission-card__note">*Our mission defines the path forward; execution is underway and subject to validation and development milestones.*</p>
                 </div>
               </div>
             </div>
