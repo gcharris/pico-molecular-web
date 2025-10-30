@@ -15,6 +15,7 @@ import dataScienceLayer from '../photos/data-science-layer.png'
 import rithmLogoMark from '../photos/rithm-logo-mark-transparent.png'
 import rithmWord from '../photos/rithm-word-transparent.png'
 import SplashGate from './components/SplashGate'
+import clinicalImpactScene from '../photos/4. Clinical Impact Scene.png'
 
 const ACCESS_KEY = 'pico-vision-access'
 
@@ -300,24 +301,25 @@ function App() {
             </div>
           </section>
 
-          <section className="mission-section bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
-              <div className="mission-grid">
-                <div className="mission-card mission-card--vision">
-                  <p className="mission-card__overline">Vision · Our North Star</p>
-                  <h3 className="mission-card__title">Continuous molecular intelligence for every body.</h3>
-                  <p className="mission-card__text">
-                    Pico Molecular envisions a future where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
-                  </p>
-                  <p className="mission-card__note">*This vision represents our long-term goal and the impact we aspire to create.*</p>
-                </div>
-                <div className="mission-card mission-card--mission">
+          <section className="mission-vision-hero" style={{ backgroundImage: `url(${clinicalImpactScene})` }}>
+            <div className="mission-vision-overlay" />
+            <div className="mission-vision-container">
+              <div className="mission-vision-grid">
+                <div className="mission-vision-card mission-vision-card--mission">
                   <p className="mission-card__overline">Mission · What We&apos;re Building</p>
                   <h3 className="mission-card__title">Translate hormone signals into better outcomes.</h3>
                   <p className="mission-card__text">
                     We are developing wearable biosensors and AI biomarkers that aim to empower patients, equip clinicians, and unlock new standards of women’s health delivery as validation milestones are achieved.
                   </p>
                   <p className="mission-card__note">*Our mission defines the path forward; execution is underway and subject to validation and development milestones.*</p>
+                </div>
+                <div className="mission-vision-card mission-vision-card--vision">
+                  <p className="mission-card__overline">Vision · Our North Star</p>
+                  <h3 className="mission-card__title">Continuous molecular intelligence for every body.</h3>
+                  <p className="mission-card__text">
+                    Pico Molecular envisions a future where endocrine insight is ambient, proactive, and accessible — powering preventive care pathways across fertility, metabolic health, and healthy aging.
+                  </p>
+                  <p className="mission-card__note">*This vision represents our long-term goal and the impact we aspire to create.*</p>
                 </div>
               </div>
             </div>
