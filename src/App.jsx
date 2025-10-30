@@ -286,14 +286,16 @@ const steps = [
   {
     id: 1,
     title: 'Wear',
-    description: 'Apply the skin-friendly patch—microneedles establish gentle, stable biofluid access in minutes.',
+    description:
+      'Apply the skin-friendly patch—microneedles painlessly establish gentle, stable biofluid access in minutes, creating a continuous monitoring foundation.',
     gradientClass: 'step-gradient-1',
     icon: createWearIcon('wear-icon'),
   },
   {
     id: 2,
     title: 'Connect',
-    description: 'Edge electronics encrypt and stream data to the app, while cloud intelligence harmonizes and calibrates signals.',
+    description:
+      'Edge electronics encrypt and stream data to the app, while cloud intelligence harmonizes and calibrates signals in real time for clinical-grade accuracy.',
     gradientClass: 'step-gradient-2',
     icon: createConnectIcon('connect-icon'),
   },
@@ -471,12 +473,12 @@ function App() {
           <section className="three-clicks-section bg-white">
              <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
               <div className="three-clicks-header">
-                <h2 className="three-clicks-title font-display text-4xl text-brand-dark sm:text-5xl">From wear to wisdom in three clicks.</h2>
-                <p className="three-clicks-subtitle mt-4 text-brand-muted">
+                <h2 className="three-clicks-title section-title font-display text-4xl text-brand-dark sm:text-5xl">From wear to wisdom in three clicks.</h2>
+                <p className="three-clicks-subtitle section-subtitle text-brand-muted">
                   Microneedle arrays, electrochemical EAB sensors, and AI biomarker engines work together to transform surface-level sampling into clinically meaningful hormone intelligence.
                 </p>
               </div>
-              <div className="steps-flow">
+              <div className="steps-flow steps-container">
                 {steps.map((step, index) => (
                   <Fragment key={step.id}>
                     <div className={`step-card ${step.gradientClass}`}>
