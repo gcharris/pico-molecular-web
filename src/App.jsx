@@ -140,7 +140,7 @@ const validationMilestones = [
 
 const partnerHighlights = [
   {
-    title: 'Target Clinical Partners',
+    title: 'Target Clinical Partners for Co-Development',
     detail: 'Target: Deploy Rithm Patch as a turnkey program with white-labeled care pathways and reimbursement guides.',
   },
   {
