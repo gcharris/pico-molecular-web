@@ -31,8 +31,8 @@ function SplashGate({ onSuccess, logoSrc }) {
             <img
               src={founderBackground}
               alt="Founder portrait"
-              className="pointer-events-none h-full max-h-[78vh] w-full select-none object-cover"
-              style={{ filter: 'contrast(1.05) saturate(1.04)', objectPosition: 'center 40%' }}
+              className="pointer-events-none h-full w-full select-none object-cover"
+              style={{ filter: 'contrast(1.07) saturate(1.06)', objectPosition: 'center 42%' }}
             />
           </div>
         </div>
