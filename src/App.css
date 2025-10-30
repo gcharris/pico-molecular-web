@@ -259,6 +259,7 @@ a {
 .advisor-grid {
   display: grid;
   gap: 1.25rem;
+  margin-top: 2.5rem;
 }
 
 @media (min-width: 640px) {
@@ -319,6 +320,110 @@ a {
 
 .advisor-disclaimer {
   margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.81rem;
+  color: rgba(100, 116, 139, 0.9);
+  font-style: italic;
+}
+
+.founder-profile {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(248, 250, 255, 0.95), rgba(237, 242, 255, 0.9));
+  border-radius: 2rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 28px 55px -32px rgba(15, 23, 42, 0.2);
+}
+
+@media (min-width: 1024px) {
+  .founder-profile {
+    grid-template-columns: auto 1fr;
+    padding: 3rem 3.5rem;
+  }
+}
+
+.founder-photo {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.founder-photo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.75rem;
+  box-shadow: 0 32px 60px -35px rgba(59, 130, 246, 0.35);
+}
+
+.founder-photo__glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.75rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.12));
+  pointer-events: none;
+}
+
+.founder-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.founder-bio__overline {
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(59, 130, 246, 0.85);
+}
+
+.founder-bio__name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 4.2vw, 3.2rem);
+  color: #0f172a;
+  line-height: 1.15;
+}
+
+.founder-bio__text {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.advisor-section {
+  margin-top: 4.5rem;
+  text-align: center;
+}
+
+.advisor-section__heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.1rem, 3.6vw, 2.8rem);
+  color: #0f172a;
+}
+
+.advisor-section__subtitle {
+  margin-top: 1rem;
+  color: rgba(15, 23, 42, 0.65);
+  font-size: 1rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .mission-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .feature-card {

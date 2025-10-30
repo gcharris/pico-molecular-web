@@ -782,51 +782,46 @@ function App() {
       </section>
 
           <section className="bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-16 lg:px-12">
-              <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-                <div className="space-y-6">
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Founder</h2>
-                  <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
-                    <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-                      <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-2xl">
-                        <img src={teamPortrait} alt="Pico Molecular founding team" className="h-full w-full object-cover" />
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-glow/20" />
-                      </div>
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Founder &amp; CEO</p>
-                        <h3 className="mt-2 font-display text-3xl text-brand-dark">Josephine Carr-Harris</h3>
-                        <p className="mt-3 text-sm text-brand-muted">
-                          Josephine Carr-Harris is a digital health founder and CEO who blends biomedical engineering rigor with startup execution. An iBiomed graduate from McMaster University, she pairs technical fluency with strategic leadership to translate science into market-ready experiences.
-                        </p>
-                        <p className="mt-4 text-sm text-brand-muted">
-                          She has supported a $1.5M seed round, led deep-tech diligence, and architected go-to-market plans across early-stage ventures while guiding product design, business development, and innovation programs in the health ecosystem.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+            <div className="mx-auto max-w-6xl px-6 py-20 lg:px-12">
+              <div className="founder-profile">
+                <div className="founder-photo">
+                  <img src={teamPortrait} alt="Josephine Carr-Harris" className="founder-photo__img" />
+                  <div className="founder-photo__glow" aria-hidden="true" />
                 </div>
-                <div className="space-y-6">
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Scientific Advisors</h2>
-                  <p className="text-sm text-brand-muted">
-                    A world-class advisory network is critical to our vision. We&apos;re actively building relationships with leaders in the following fields:
+                <div className="founder-bio">
+                  <p className="founder-bio__overline">Founder &amp; CEO</p>
+                  <h2 className="founder-bio__name">Josephine Carr-Harris</h2>
+                  <p className="founder-bio__text">
+                    Josephine Carr-Harris is a digital health founder and CEO who blends biomedical engineering rigor with startup execution. An iBiomed graduate from McMaster University, she pairs technical fluency with strategic leadership to translate science into market-ready experiences.
                   </p>
-                  <div className="advisor-grid">
-                    {advisorExpertise.map((item) => (
-                      <div key={item.label} className="advisor-card">
-                        <div className="advisor-icon" aria-hidden="true">✶</div>
-                        <div>
-                          <h3 className="advisor-card__title">{item.label}</h3>
-                          <p className="advisor-card__detail">{item.description}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <p className="advisor-disclaimer text-center text-[13px] italic text-brand-muted/80">
-                    *Scientific advisory collaborations are aspirational and represent our intended fields of expertise; formal agreements are in development.*
+                  <p className="founder-bio__text">
+                    She has supported a $1.5M seed round, led deep-tech diligence, and architected go-to-market plans across early-stage ventures while guiding product design, business development, and innovation programs in the health ecosystem.
                   </p>
                 </div>
               </div>
-              <div className="mt-16 grid gap-8 sm:grid-cols-2">
+
+              <div className="advisor-section">
+                <h3 className="advisor-section__heading">Target Advisory Expertise</h3>
+                <p className="advisor-section__subtitle">
+                  A world-class advisory network is critical to our vision. We&apos;re actively building relationships with leaders in the following fields:
+                </p>
+                <div className="advisor-grid">
+                  {advisorExpertise.map((item) => (
+                    <div key={item.label} className="advisor-card">
+                      <div className="advisor-icon" aria-hidden="true">✶</div>
+                      <div>
+                        <h4 className="advisor-card__title">{item.label}</h4>
+                        <p className="advisor-card__detail">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <p className="advisor-disclaimer">
+                  *Scientific advisory collaborations are aspirational and represent our intended fields of expertise; formal agreements are in development.*
+                </p>
+              </div>
+
+              <div className="mission-grid">
                 <div className="rounded-3xl border border-brand-light bg-brand-light/70 p-8 shadow-sm">
                   <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-primary">Vision</p>
                   <h3 className="mt-4 font-display text-2xl text-brand-dark">Continuous molecular intelligence for every body.</h3>
