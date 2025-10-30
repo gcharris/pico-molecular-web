@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import picoIcon from '../photos/pico-logo-icon.png'
 import heroImage from '../photos/hero-patch-model.png'
@@ -13,6 +14,9 @@ import partnersUnique from '../photos/partners-unique-haas.png'
 import dataScienceLayer from '../photos/data-science-layer.png'
 import rithmLogoMark from '../photos/rithm-logo-mark-transparent.png'
 import rithmWord from '../photos/rithm-word-transparent.png'
+import SplashGate from './components/SplashGate'
+
+const ACCESS_KEY = 'pico-vision-access'
 
 const navigation = [
   { href: '#pipeline', label: 'Pipeline' },
@@ -181,6 +185,28 @@ const featureHighlights = [
 ]
 
 function App() {
+  const [isAuthorized, setIsAuthorized] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const stored = window.localStorage.getItem(ACCESS_KEY)
+      if (stored === 'granted') {
+        setIsAuthorized(true)
+      }
+    }
+  }, [])
+
+  const handleUnlock = () => {
+    setIsAuthorized(true)
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem(ACCESS_KEY, 'granted')
+    }
+  }
+
+  if (!isAuthorized) {
+    return <SplashGate logoSrc={picoIcon} onSuccess={handleUnlock} />
+  }
+
   return (
     <div className="bg-brand-light text-brand-dark">
       <div className="relative overflow-hidden">
