@@ -216,6 +216,14 @@ a {
   }
 }
 
+.validation-columns {
+  align-items: flex-start;
+}
+
+.validation-roadmap__heading {
+  margin-top: 0;
+}
+
 .feature-card {
   border-radius: 1.75rem;
   border: 1px solid rgba(148, 163, 184, 0.16);

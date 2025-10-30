@@ -691,9 +691,9 @@ function App() {
           <section id="validation" className="relative bg-brand-light/60">
             <div className="absolute inset-x-0 -top-10 mx-auto h-20 max-w-5xl rounded-full bg-gradient-to-r from-brand-primary/20 via-brand-glow/10 to-transparent blur-3xl" />
             <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-12">
-              <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+              <div className="validation-columns grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
                 <div>
-                  <h2 className="font-display text-4xl text-brand-dark sm:text-5xl">Validation Roadmap: Target Milestones</h2>
+                  <h2 className="validation-roadmap__heading font-display text-4xl text-brand-dark sm:text-5xl">Validation Roadmap: Target Milestones</h2>
                   <p className="mt-4 text-brand-muted">
                     A forward-looking plan that outlines how Pico Molecular could prove safety, reliability, and regulatory readiness once prototypes are mature.
                   </p>
